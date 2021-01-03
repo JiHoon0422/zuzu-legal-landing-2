@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "ZUZU LEGAL LANDING"
 theme = "ananke"
 
 [caches]
@@ -45,3 +45,14 @@ theme = "ananke"
       decimals = -1
     [minify.tdewolff.xml]
       keepWhitespace = false
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    max = ""
+    min = ""
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
