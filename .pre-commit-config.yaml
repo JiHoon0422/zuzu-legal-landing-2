@@ -26,3 +26,5 @@ repos:
       - id: stylelint
         additional_dependencies:
           ["stylelint@13.2.1", "stylelint-config-standard@20.0.0"]
+          ignoreFiles:
+          ["/css/bootstrap.min.css"]  

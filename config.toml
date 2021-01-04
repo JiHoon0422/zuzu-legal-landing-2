@@ -1,7 +1,32 @@
-baseURL = "/"
+baseURL = "http://example.org/"
 languageCode = "ko"
-title = "ZUZU LEGAL LANDING"
-theme = "ananke"
+title = "주주 리걸"
+theme = "zuzu"
+staticDir = "static"
+
+[build]
+  noJSConfigInAssets = false
+  useResourceCacheWhen = "fallback"
+  writeStats = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
 
 [caches]
   [caches.assets]
@@ -51,6 +76,11 @@ theme = "ananke"
     extended = false
     max = ""
     min = ""
+    noProxy = "none"
+    noVendor = ""
+    private = "*.*"
+    proxy = "direct"
+    replacements = ""
 
 [sitemap]
   changefreq = "weekly"
