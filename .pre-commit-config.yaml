@@ -16,15 +16,9 @@ repos:
         additional_dependencies:
           - prettier@2.1.2
           - "@prettier/plugin-xml@0.12.0"
-  - repo: https://github.com/pre-commit/mirrors-csslint
-    rev: "" # Use the sha / tag you want to point at
-    hooks:
-      - id: csslint
   - repo: https://github.com/awebdeveloper/pre-commit-stylelint
     rev: "" # Use the sha or tag you want to point at like 0.0.1
     hooks:
       - id: stylelint
         additional_dependencies:
           ["stylelint@13.2.1", "stylelint-config-standard@20.0.0"]
-          ignoreFiles:
-          ["/css/bootstrap.min.css"]  
