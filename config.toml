@@ -1,81 +1,126 @@
 baseURL = "http://example.org/"
 languageCode = "ko"
+DefaultContentLanguage = "ko"
 title = "주주 리걸"
 theme = "zuzu"
-staticDir = "static"
-relativeURLs = "true"
+enableEmoji = true
+enableRobotsTXT = true
+SectionPagesMenu = "main"
 publishDir = "docs"
+googleAnalytics = ""
+canonifyurls = true
 
+[params]
+author = "Kodebox"
+description = "주주총회·이사회 진행부터, 등기까지!"
+favicon = "favicons/"
+doNotLoadAnimations = false
+googleSiteVerify = ""
+
+[[prarams.socialIcons]]
+icon = ""
+title = "Facebok"
+url = "https://facebook.com/zuzunetwork"
+
+[[params.socialIcons]]
+icon = ""
+title = "Notion"
+url = "https://www.notion.so/public-346024d9fcc04d7a937091febb5494bc"
+
+[[params.socialIcons]]
+icon = ""
+title = "email"
+url = "help@zuzu.network"
+
+[menu]
+
+[[menu.main]]
+name = "홈"
+pre = "home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "지원 안건"
+pre = "pen-tool"
+url = "/agendas/"
+weight = 2
+
+[[menu.main]]
+name = "생성 문서"
+pre = "tag"
+url = "/documents/"
+weight = 3
+
+[[menu.main]]
+name = "이용 가격"
+pre = "tag"
+url = "/pricing/"
+weight = 4
+
+[[menu.main]]
+name = "비대면 바우처"
+pre = "tag"
+url = "/voucher/"
+weight = 5
+
+[[menu.main]]
+name = "사용설명서"
+pre = "tag"
+url = "/manual/"
+weight = 6
 
 [build]
-  noJSConfigInAssets = false
-  useResourceCacheWhen = "fallback"
-  writeStats = false
+noJSConfigInAssets = false
+useResourceCacheWhen = "fallback"
+writeStats = false
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      attribute = true
-      autoHeadingID = true
-      autoHeadingIDType = "github"
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = false
-      xhtml = false
+
+[markup.goldmark]
+
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+autoHeadingIDType = "github"
+
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = false
+xhtml = false
 
 [caches]
-  [caches.assets]
-    dir = ":resourceDir/_gen"
-    maxAge = -1
-  [caches.getcsv]
-    dir = ":cacheDir/:project"
-    maxAge = -1
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = -1
-  [caches.images]
-    dir = ":resourceDir/_gen"
-    maxAge = -1
-  [caches.modules]
-    dir = ":cacheDir/modules"
-    maxAge = -1
 
-[minify]
-  disableCSS = false
-  disableHTML = false
-  disableJS = false
-  disableJSON = false
-  disableSVG = false
-  disableXML = false
-  minifyOutput = false
-  [minify.tdewolff]
-    [minify.tdewolff.css]
-      decimals = -1
-      keepCSS2 = true
-    [minify.tdewolff.html]
-      keepConditionalComments = true
-      keepDefaultAttrVals = true
-      keepDocumentTags = true
-      keepEndTags = true
-      keepQuotes = false
-      keepWhitespace = false
-    [minify.tdewolff.js]
-    [minify.tdewolff.json]
-    [minify.tdewolff.svg]
-      decimals = -1
-    [minify.tdewolff.xml]
-      keepWhitespace = false
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = -1
 
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = -1
+
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = -1
+
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = -1
+
+[caches.modules]
+dir = ":cacheDir/modules"
+maxAge = -1
 
 [sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5

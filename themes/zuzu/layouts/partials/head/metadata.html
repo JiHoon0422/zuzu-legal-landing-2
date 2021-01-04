@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta
+  name="description"
+  content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}"
+/>
+
+{{- hugo.Generator -}}
+<meta htt-equiv="content-language" content="ko" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- *! Temporarily remove cache *  -->
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+
+<!-- * Google Verification -->
+{{- if .Site.Params.googleSiteVerify }}
+<meta
+  name="google-site-verification"
+  content="{{ .Site.Params.googleSiteVerify }}"
+/>
+{{- end -}}
