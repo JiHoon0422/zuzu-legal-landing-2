@@ -3,6 +3,9 @@ languageCode = "ko"
 title = "주주 리걸"
 theme = "zuzu"
 staticDir = "static"
+relativeURLs = "true"
+publishDir = "docs"
+
 
 [build]
   noJSConfigInAssets = false
@@ -71,16 +74,6 @@ staticDir = "static"
     [minify.tdewolff.xml]
       keepWhitespace = false
 
-[module]
-  [module.hugoVersion]
-    extended = false
-    max = ""
-    min = ""
-    noProxy = "none"
-    noVendor = ""
-    private = "*.*"
-    proxy = "direct"
-    replacements = ""
 
 [sitemap]
   changefreq = "weekly"
