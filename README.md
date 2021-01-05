@@ -1,10 +1,6 @@
-#### SASS Structure
+## SASS Structure 🕋
 
-### Abstracts
-
-holds Sass tools, helper files, variables, functions, mixins and other config files. These files are meant to be just helpers which don’t output any CSS when compiled.
-
-##### Base
+#### Base
 
 holds the boilerplate code for the project. Including standard styles such as resets and typographic rules, which are commonly used throughout your project.
 
@@ -15,6 +11,10 @@ holds all of your styles for buttons, carousels, sliders, and similar page compo
 #### Layout
 
 contains all styles involved with the layout of your project. Such as styles for your header, footer, navigation and the grid system.
+
+### Abstracts
+
+holds Sass tools, helper files, variables, functions, mixins and other config files. These files are meant to be just helpers which don’t output any CSS when compiled.
 
 ### Pages
 
