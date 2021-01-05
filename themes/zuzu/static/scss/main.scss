@@ -1,3 +1,4 @@
-@import "_reset", "_typography", "_color";
+@import "base/_reset", "base/_typography", "base/variable";
+@import "layout/footer.scss";
 
-// To do: Add robotomized owl
+// * TO DO: ADD ROBOTOMIZED OWL

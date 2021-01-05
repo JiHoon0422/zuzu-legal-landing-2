@@ -110,12 +110,71 @@ input {
   border-radius: 0;
 }
 
+/** 
+ * * NOTICE 
+  We use fluid typography system.
+  https://css-tricks.com/snippets/css/fluid-typography/
+  https://css-tricks.com/simplified-fluid-typography/
+ */
+/** 
+ * * Type Scale Starts
+ * Major-third Modular Type Scale
+ * https://type-scale.com/
+*/
 html {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 62.5% !important;
-  /**
-     * * Set the default font size of this website to 16px(1.6rem).
-     * ! DONT CHANGE THIS VALUE
-    */
+}
+
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc( 14px + 6 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+/**
+ * * Type Scale Starts Ends */
+footer {
+  background-color: "#37474F";
 }
 /*# sourceMappingURL=main.css.map */

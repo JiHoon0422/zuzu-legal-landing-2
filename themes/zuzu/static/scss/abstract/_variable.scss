@@ -1,11 +1,11 @@
-// * All values in this sheet are based on theme.tsx
+// ! MOST OF VALUES HERE ARE BASED ON THEME.TSX IN LEGAL APP
 
-// Primary Color
+// * PRIMARY COLOR
 $primary: "#3C855A";
 $primaryLight: "#4AA570";
 $primaryHover: "#408f61";
 
-// * Black and White
+// * BLACK AND WHITE
 $bodyText: "#535353";
 $buttonStroke: "#21575A";
 $disabledBackground: "#DDDDDD";
@@ -25,3 +25,13 @@ $borderColor: "#E3E3E3";
 $deliveryPrimary: "#192841";
 $tableBody: "#2E2E2E";
 $labelText: "#444444";
+
+// * TRIVIAL
+$FooterBackground: "#37474F";
+
+// * UNIT
+$unit: 0.8rem;
+$gutter: calc($unit * 3);
+
+// URL VARIABLE
+$base-img-url: "/images";
