@@ -1,5 +1,3 @@
-# ZUZU LEGAL LANDING 2.0
-
 ## Prerequisites
 
 ### 1. Hugo
@@ -10,7 +8,7 @@ brew install hugo
 
 ### 2. LiveSassCompiler
 
-please add the line below to setting.json
+Please add the line below to setting.json
 
 ```sh
   "prettier.disableLanguages": [
@@ -63,7 +61,3 @@ contains all third party code from external libraries and frameworks — such as
 ### Main.scss
 
 should ONLY contain the imports for the above files.
-
-```
-
-```
