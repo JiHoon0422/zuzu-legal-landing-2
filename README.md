@@ -10,9 +10,20 @@ brew install hugo
 
 ### 2. LiveSassCompiler
 
+please add the line below to setting.json
+
+````sh
+  "prettier.disableLanguages": [
+        "html"
+    ]
+```
+
 ## CSS Naming Conventions
 
-### 1. Use Hyphen Delimited Strings
+### Hyphen Delimited
+- To know what a selector does, just by looking at its name
+- To have an idea of where a selector can be used, just by looking at it
+- To know the relationships between class names, just by looking at them
 
 [More information](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/)
 
@@ -51,3 +62,4 @@ contains all third party code from external libraries and frameworks — such as
 ### Main.scss
 
 should ONLY contain the imports for the above files.
+````
