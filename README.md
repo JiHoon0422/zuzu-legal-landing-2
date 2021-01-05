@@ -12,7 +12,7 @@ brew install hugo
 
 please add the line below to setting.json
 
-````sh
+```sh
   "prettier.disableLanguages": [
         "html"
     ]
@@ -21,6 +21,7 @@ please add the line below to setting.json
 ## CSS Naming Conventions
 
 ### Hyphen Delimited
+
 - To know what a selector does, just by looking at its name
 - To have an idea of where a selector can be used, just by looking at it
 - To know the relationships between class names, just by looking at them
@@ -62,4 +63,7 @@ contains all third party code from external libraries and frameworks — such as
 ### Main.scss
 
 should ONLY contain the imports for the above files.
-````
+
+```
+
+```
