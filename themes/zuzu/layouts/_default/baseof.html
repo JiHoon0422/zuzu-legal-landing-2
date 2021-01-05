@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lnag="ko-KR">
+<html lnag="{{.Site.Language}}">
   {{- partial "head/head.html" . -}}
   <body>
     {{- partial "header/header.html" . -}}
     <div id="content">{{- block "main" . }}{{- end }}</div>
-    {{- partial "footer/footer.html" . -}} {{- partial "script.html" . -}}
+    {{- partial "footer/footer.html" . -}} 
+    {{- partial "script.html" . -}}
   </body>
 </html>

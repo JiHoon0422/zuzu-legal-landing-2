@@ -1,37 +1,42 @@
 // ! MOST OF VALUES HERE ARE BASED ON THEME.TSX IN LEGAL APP
 
 // * PRIMARY COLOR
-$primary: "#3C855A";
-$primaryLight: "#4AA570";
-$primaryHover: "#408f61";
+$primary: #3c855a;
+$primaryLight: #4aa570;
+$primaryHover: #408f61;
 
 // * BLACK AND WHITE
-$bodyText: "#535353";
-$buttonStroke: "#21575A";
-$disabledBackground: "#DDDDDD";
-$disabledButtonBackground: "#DDDDDD";
-$disabledText: "rgba(0,0,0,.38)";
-$hr: "#E6E6E6";
-$materialInputBackground: "#F5F5F5";
-$pageBackground: "#EAECF0";
-$placeholder: "rgba(0,0,0,.6)";
-$popupBackground: "rgba(0,0,0,.502)";
-$secondaryButtonBackground: "#FAFBFC";
-$secondaryButtonStroke: "rgba(27,31,35,.2)";
-$subtitleText: "#2E2E2E";
-$tableHeader: "#535353";
-$tableBackground: "#F2F2F2";
-$borderColor: "#E3E3E3";
-$deliveryPrimary: "#192841";
-$tableBody: "#2E2E2E";
-$labelText: "#444444";
-
-// * TRIVIAL
-$FooterBackground: "#37474F";
+$bodyText: #535353;
+$buttonStroke: #21575a;
+$disabledBackground: #dddddd;
+$disabledButtonBackground: #dddddd;
+$disabledText: rgba(0, 0, 0, 0.38);
+$hr: #e6e6e6;
+$materialInputBackground: #f5f5f5;
+$pageBackground: #eaecf0;
+$placeholder: rgba(0, 0, 0, 0.6);
+$popupBackground: rgba(0, 0, 0, 0.502);
+$secondaryButtonBackground: #fafbfc;
+$secondaryButtonStroke: rgba(27, 31, 35, 0.2);
+$subtitleText: #2e2e2e;
+$tableHeader: #535353;
+$tableBackground: #f2f2f2;
+$borderColor: #e3e3e3;
+$deliveryPrimary: #192841;
+$tableBody: #2e2e2e;
+$labelText: #444444;
+$white: #ffffff;
+$footerBackgroundColor: rgb(234, 236, 240);
 
 // * UNIT
-$unit: 0.8rem;
+$baseUnit: 0.8rem;
 $gutter: calc($unit * 3);
 
 // URL VARIABLE
 $base-img-url: "/images";
+
+// FONT-WEIGHT
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;

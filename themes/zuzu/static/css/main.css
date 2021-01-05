@@ -1,3 +1,6 @@
+/** 
+* ! This file should only contain your imports! 
+*/
 *,
 *:before,
 *:after {
@@ -110,6 +113,10 @@ input {
   border-radius: 0;
 }
 
+.row + .row {
+  margin-top: 2.4rem;
+}
+
 /** 
  * * NOTICE 
   We use fluid typography system.
@@ -126,12 +133,12 @@ html {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: calc( 14px + 6 * ((100vw - 320px) / 1280));
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 1280));
   }
 }
 
@@ -144,37 +151,181 @@ html {
 h1 {
   margin-top: 0;
   font-size: 3.052rem;
+  letter-spacing: -0.04rem;
 }
 
 h2 {
   font-size: 2.441rem;
+  letter-spacing: -0.03rem;
 }
 
 h3 {
   font-size: 1.953rem;
+  letter-spacing: -0.02rem;
 }
 
 h4 {
   font-size: 1.563rem;
+  letter-spacing: -0.02rem;
 }
 
 h5 {
   font-size: 1.25rem;
+  letter-spacing: -0.02rem;
 }
 
 p {
   font-size: 1rem;
   line-height: 2;
+  letter-spacing: -0.01rem;
 }
 
 small,
-.text_small {
+.text-small,
+footer .footer-group .footer-group-title,
+footer .footer-group .footer-group-list,
+footer .footer-group .footer-group-list-company-info {
   font-size: 0.8rem;
+  letter-spacing: 0.01rem;
+}
+
+/**
+ * * Type Scale Starts Ends */
+a.no-decoration {
+  color: rgba(0, 0, 0, 0.38);
+  text-decoration: none;
+}
+
+a.no-decoration:hover {
+  text-decoration: underline;
+}
+
+nav.main-nav {
+  max-width: 1072px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/** 
+ * * NOTICE 
+  We use fluid typography system.
+  https://css-tricks.com/snippets/css/fluid-typography/
+  https://css-tricks.com/simplified-fluid-typography/
+ */
+/** 
+ * * Type Scale Starts
+ * Major-third Modular Type Scale
+ * https://type-scale.com/
+*/
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  letter-spacing: -0.04rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.03rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+  letter-spacing: -0.02rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+  letter-spacing: -0.02rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: -0.02rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: -0.01rem;
+}
+
+small,
+.text-small,
+footer .footer-group .footer-group-title,
+footer .footer-group .footer-group-list,
+footer .footer-group .footer-group-list-company-info {
+  font-size: 0.8rem;
+  letter-spacing: 0.01rem;
 }
 
 /**
  * * Type Scale Starts Ends */
 footer {
-  background-color: "#37474F";
+  width: 100%;
+  background-color: #eaecf0;
+}
+
+footer .footer-inner {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.4rem;
+}
+
+footer .row + .row {
+  margin-top: 1.6rem;
+}
+
+footer .footer-group .footer-group-title a,
+footer .footer-group .footer-group-title p,
+footer .footer-group .footer-group-list a,
+footer .footer-group .footer-group-list-company-info a,
+footer .footer-group .footer-group-list p,
+footer .footer-group .footer-group-list-company-info p {
+  font-size: inherit;
+}
+
+footer .footer-group .footer-group-title {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #535353;
+}
+
+footer .footer-group .footer-group-list, footer .footer-group .footer-group-list-company-info {
+  padding: 0.4rem 0;
+}
+
+footer .footer-group .footer-group-list-company-info {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.38);
 }
 /*# sourceMappingURL=main.css.map */

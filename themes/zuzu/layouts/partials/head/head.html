@@ -1,5 +1,6 @@
 <head>
-  {{- partial "head/metadata.html" . -}} {{- partial "head/prerender.html" . -}}
+  {{- partial "head/metadata.html" . -}} 
+  {{- partial "head/prerender.html" . -}}
   {{- partial "head/favicon.html" . -}} 
   {{ $title := print .Site.Title " | " .Title }} 
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}

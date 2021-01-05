@@ -1,4 +1,7 @@
-@import "base/_reset", "base/_typography", "base/variable";
-@import "layout/footer.scss";
+/** 
+* ! This file should only contain your imports! 
+*/
 
-// * TO DO: ADD ROBOTOMIZED OWL
+@import "base/_reset", "base/global.scss", "base/_typography";
+@import "components/link", "components/navigation";
+@import "layout/footer.scss";

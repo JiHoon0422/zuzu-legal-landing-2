@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAA,AAAA,IAAC,AAAA,CAAK,cAAc,CAAC;EAClB,KAAK,ECKE,OAAO;EDJd,eAAe,EAAE,eAAe;CAInC;;AAND,AAGI,CAHH,CAAA,AAAA,IAAC,AAAA,CAAK,cAAc,AAGhB,MAAM,CAAC;EACJ,eAAe,EAAE,IAAI;CACxB",
+    "sources": [
+        "../components/link.scss",
+        "../abstract/_variable.scss"
+    ],
+    "names": [],
+    "file": "link.css"
+}

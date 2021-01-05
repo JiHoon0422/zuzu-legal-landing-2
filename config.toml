@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "ko"
 DefaultContentLanguage = "ko"
 title = "주주 리걸"
@@ -12,9 +12,9 @@ canonifyurls = true
 
 #Configure Site Parameters
 [params]
-author = "Kodebox"
+author = "Kodebox|JIhoonLee"
 description = "주주총회·이사회 진행부터, 등기까지!"
-favicon = "favicons/"
+favicon = "/assets/favicon"
 doNotLoadAnimations = false
 googleSiteVerify = ""
 
@@ -22,40 +22,54 @@ googleSiteVerify = ""
 [menu]
 
 [[menu.main]]
-name = "홈"
-pre = "home"
-url = "/"
+identifier = "agendas"
+name = "지원 안건"
+url = "/agendas/"
 weight = 1
 
 [[menu.main]]
-name = "지원 안건"
-pre = "pen-tool"
-url = "/agendas/"
+identifier = "resolutionAndRegistration"
+name = "주주총회·이사회·등기 모두 필요 안건"
+url = "/agendas/resolution-required"
+parent = "agendas"
+
+[[menu.main]]
+identifier = "registrationOnly"
+name = "등기만 필요한 안건"
+url = "/agendas/registration-only"
+parent = "agendas"
+
+[[menu.main]]
+identifier = "resolutionOnly"
+name = "주주총회·이사회만 필요한 안건"
+url = "/agendas/resolution-only"
+parent = "agendas"
+
+[[menu.main]]
+
+[[menu.main]]
+identifier = "documents"
+name = "생성 문서"
+url = "/documents/"
 weight = 2
 
 [[menu.main]]
-name = "생성 문서"
-pre = "tag"
-url = "/documents/"
+identifier = "pricing"
+name = "이용 가격"
+url = "/pricing/"
 weight = 3
 
 [[menu.main]]
-name = "이용 가격"
-pre = "tag"
-url = "/pricing/"
+identifier = "voucher"
+name = "비대면 바우처"
+url = "/voucher/"
 weight = 4
 
 [[menu.main]]
-name = "비대면 바우처"
-pre = "tag"
-url = "/voucher/"
+identifier = "guide"
+name = "가이드"
+url = "/guide/"
 weight = 5
-
-[[menu.main]]
-name = "사용설명서"
-pre = "tag"
-url = "/manual/"
-weight = 6
 
 # Set up build setting
 [build]
@@ -87,47 +101,31 @@ hardWraps = false
 unsafe = false
 xhtml = false
 
-# Configure Cache Setting.
-[caches]
-
-[caches.assets]
-dir = ":resourceDir/_gen"
-maxAge = -1
-
-[caches.getcsv]
-dir = ":cacheDir/:project"
-maxAge = -1
-
-[caches.getjson]
-dir = ":cacheDir/:project"
-maxAge = -1
-
-[caches.images]
-dir = ":resourceDir/_gen"
-maxAge = -1
-
-[caches.modules]
-dir = ":cacheDir/modules"
-maxAge = -1
-
-#Configure Social Icons
-[[prarams.socialIcons]]
-icon = ""
-title = "Facebok"
-url = "https://facebook.com/zuzunetwork"
-
-[[params.socialIcons]]
-icon = ""
-title = "Notion"
-url = "https://www.notion.so/public-346024d9fcc04d7a937091febb5494bc"
-
-[[params.socialIcons]]
-icon = ""
-title = "email"
-url = "help@zuzu.network"
-
 #Configure Sitemap.
 [sitemap]
 changefreq = "weekly"
 filename = "sitemap.xml"
 priority = 0.5
+
+#Temporal Cache Setting
+[caches]
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = 0
+
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = 0
+
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = 0
+
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = 0
+
+[caches.modules]
+dir = ":cacheDir/modules"
+maxAge = 0
