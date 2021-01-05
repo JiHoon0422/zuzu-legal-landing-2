@@ -1,3 +1,21 @@
+# ZUZU LEGAL LANDING 2.0
+
+## Prerequisites
+
+### 1. Hugo
+
+```sh
+brew install hugo
+```
+
+### 2. LiveSassCompiler
+
+## CSS Naming Conventions
+
+### 1. Use Hyphen Delimited Strings
+
+[More information](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/)
+
 ## SASS Structure 🕋
 
 ### 📁Base
