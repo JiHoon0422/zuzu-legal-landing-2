@@ -10,6 +10,7 @@ publishDir = "docs"
 googleAnalytics = ""
 canonifyurls = true
 
+#Configure Site Parameters
 [params]
 author = "Kodebox"
 description = "주주총회·이사회 진행부터, 등기까지!"
@@ -32,6 +33,7 @@ icon = ""
 title = "email"
 url = "help@zuzu.network"
 
+#  Set Up Menu.
 [menu]
 
 [[menu.main]]
@@ -70,11 +72,13 @@ pre = "tag"
 url = "/manual/"
 weight = 6
 
+# Set up build setting
 [build]
 noJSConfigInAssets = false
 useResourceCacheWhen = "fallback"
 writeStats = false
 
+# Configure Markup Setting
 [markup]
 
 [markup.goldmark]
@@ -98,6 +102,7 @@ hardWraps = false
 unsafe = false
 xhtml = false
 
+# Configure Cache Setting.
 [caches]
 
 [caches.assets]
@@ -120,6 +125,7 @@ maxAge = -1
 dir = ":cacheDir/modules"
 maxAge = -1
 
+#Configure Sitemap.
 [sitemap]
 changefreq = "weekly"
 filename = "sitemap.xml"
