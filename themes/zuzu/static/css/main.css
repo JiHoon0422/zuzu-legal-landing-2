@@ -114,12 +114,8 @@ html {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 62.5% !important;
   /**
-     * *Set the default font size of this website to 16px(1.6rem).
-     * !DONT CHANGE THIS VALUE
+     * * Set the default font size of this website to 16px(1.6rem).
+     * ! DONT CHANGE THIS VALUE
     */
-}
-
-html {
-  caret-color: red;
 }
 /*# sourceMappingURL=main.css.map */

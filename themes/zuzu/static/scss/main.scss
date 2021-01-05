@@ -1,6 +1,3 @@
-@import "reset";
-@import "typography";
+@import "_reset", "_typography", "_color";
 
-html {
-  caret-color: red;
-}
+// To do: Add robotomized owl

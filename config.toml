@@ -18,22 +18,7 @@ favicon = "favicons/"
 doNotLoadAnimations = false
 googleSiteVerify = ""
 
-[[prarams.socialIcons]]
-icon = ""
-title = "Facebok"
-url = "https://facebook.com/zuzunetwork"
-
-[[params.socialIcons]]
-icon = ""
-title = "Notion"
-url = "https://www.notion.so/public-346024d9fcc04d7a937091febb5494bc"
-
-[[params.socialIcons]]
-icon = ""
-title = "email"
-url = "help@zuzu.network"
-
-#  Set Up Menu.
+#Set Up Menu.
 [menu]
 
 [[menu.main]]
@@ -124,6 +109,22 @@ maxAge = -1
 [caches.modules]
 dir = ":cacheDir/modules"
 maxAge = -1
+
+#Configure Social Icons
+[[prarams.socialIcons]]
+icon = ""
+title = "Facebok"
+url = "https://facebook.com/zuzunetwork"
+
+[[params.socialIcons]]
+icon = ""
+title = "Notion"
+url = "https://www.notion.so/public-346024d9fcc04d7a937091febb5494bc"
+
+[[params.socialIcons]]
+icon = ""
+title = "email"
+url = "help@zuzu.network"
 
 #Configure Sitemap.
 [sitemap]
