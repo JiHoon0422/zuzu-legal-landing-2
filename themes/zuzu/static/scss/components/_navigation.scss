@@ -1,14 +1,13 @@
-@import '../abstract/variable';
-@import '../base/typography';
+@import "../abstract/variable";
+@import "../base/typography";
 
 nav {
   &.main-nav {
-    display: flex;
-    align-items: center;
-    max-width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: $baseUnit * 1.5 $baseUnit * 3;
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      padding: $baseUnit 0;
+    }
 
     .navbar-brand {
       padding: $baseUnit * 0.5 $baseUnit;

@@ -1,4 +1,4 @@
-@import '../abstract/variable';
+@import "../abstract/variable";
 /** 
  * * NOTICE 
   FLUID TYPOGRAPHY SYSTEM
@@ -44,7 +44,7 @@ $max_font: 16px;
 */
 
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
@@ -60,6 +60,7 @@ h1 {
   margin-top: 0;
   font-size: 3.052rem;
   letter-spacing: -0.04rem;
+  font-weight: $black;
 }
 
 h2 {

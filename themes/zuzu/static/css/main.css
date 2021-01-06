@@ -113,6 +113,10 @@ input {
   border-radius: 0;
 }
 
+section {
+  padding: 6.4rem;
+}
+
 a.no-decoration {
   color: rgba(0, 0, 0, 0.38);
   text-decoration: none;
@@ -134,7 +138,7 @@ a.no-decoration:hover {
  * https://type-scale.com/
 */
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 html {
@@ -165,6 +169,7 @@ h1 {
   margin-top: 0;
   font-size: 3.052rem;
   letter-spacing: -0.04rem;
+  font-weight: 900;
 }
 
 h2 {
@@ -414,7 +419,7 @@ a.no-decoration:hover {
  * https://type-scale.com/
 */
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 html {
@@ -445,6 +450,7 @@ h1 {
   margin-top: 0;
   font-size: 3.052rem;
   letter-spacing: -0.04rem;
+  font-weight: 900;
 }
 
 h2 {
@@ -483,17 +489,14 @@ small,
 /**
  * * TYPE SCALE ENDS;
  */
-nav.main-nav {
+nav.main-nav .navbar-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1024px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1.2rem 2.4rem;
+  padding: 0.8rem 0;
 }
 
 nav.main-nav .navbar-brand {
@@ -593,7 +596,7 @@ nav.main-nav .nav-item .nav-link {
  * https://type-scale.com/
 */
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 html {
@@ -624,6 +627,7 @@ h1 {
   margin-top: 0;
   font-size: 3.052rem;
   letter-spacing: -0.04rem;
+  font-weight: 900;
 }
 
 h2 {

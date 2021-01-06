@@ -77,10 +77,10 @@ weight = 1
 
 [[menu.main]]
 identifier = "template-document"
-name = "기본 템플릿 다운로드"
+name = "기본 문서 템플릿 다운로드"
 url = "/documents/template-document"
 parent = "documents"
-title = "기본 템플릿"
+title = "기본 문서 템플릿"
 weight = 2
 
 [[menu.main]]
@@ -106,19 +106,19 @@ weight = 1
 
 [[menu.main]]
 identifier = "voucher-coupon"
-name = "비대면 바우처란 쿠폰"
+name = "비대면 바우처 쿠폰"
 url = "/voucher/coupon"
 parent = "voucher"
 title = "비대면 바우처 쿠폰"
-weight = 1
+weight = 2
 
 [[menu.main]]
 identifier = "voucher-guide"
-name = "비대면 바우처란 사용 방법"
+name = "비대면 바우처 사용 방법"
 url = "/voucher/guide"
 parent = "voucher"
 title = "비대면 바우처 사용 방법"
-weight = 1
+weight = 3
 
 [[menu.main]]
 identifier = "guide"

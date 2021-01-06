@@ -1,42 +1,44 @@
 <nav class="main-nav navbar navbar-expand-lg" aria-label="main navigation" role="menu">
-  <a href="{{ .Site.BaseURL }}" title="주주 리걸" class="navbar-brand">
-    <img src={{"/assets/images/logo-with-title.svg"| safeURL}} alt="주주 리걸 로고" class="logo" />
-  </a>
-  <button data-toggle="collapse" type="button" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-    class="navbar-toggler"><span><i data-feather="menu" class="feather-16"></i></span></button>
-  <div id="navbarSupportedContent" class="desktop-nav collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-      {{ if .HasChildren }}
-      <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }} nav-item dropdown">
-        <a href="#" id="navbarDropdownMenuLink" title={{.Title}} role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
-          {{ .Name }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          {{ range .Children }}
-          <a href="{{ .URL | safeURL }}" title={{.Title}}
-            class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} dropdown-item">{{ .Name }}</a>
-          {{ end }}
-        </div>
-      </li>
-      {{ else }}
-      <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }} nav-item">
-        <a href="{{ .URL | safeURL }}" title={{.Title}} class="nav-link">
-          {{ .Name }}
-        </a>
-      </li>
-      {{ end }}
-      {{ end }}
-    </ul>
-    <form class="form-inline">
-      <button type="button" onclick="location.href={{ .Site.Params.loginURL }}"
-        class="button button-small button-tertiary button-label-small-regular">{{.Site.Data.label.button.login}}</button>
-      <button type="button" onclick="location.href={{ .Site.Params.signupURL }}"
-        class="button button-small button-tertiary button-label-small-regular">{{.Site.Data.label.button.signup}}</button>
-    </form>
+  <div class="container navbar-inner">
+    <a href="{{ .Site.BaseURL }}" title="주주 리걸" class="navbar-brand">
+      <img src={{"/assets/images/logo-with-title.svg"| safeURL}} alt="주주 리걸 로고" class="logo" />
+    </a>
+    <button data-toggle="collapse" type="button" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler"><span><i data-feather="menu" class="feather-16"></i></span></button>
+    <div id="navbarSupportedContent" class="desktop-nav collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }} nav-item dropdown">
+          <a href="#" id="navbarDropdownMenuLink" title={{.Title}} role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
+            {{ .Name }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            {{ range .Children }}
+            <a href="{{ .URL | safeURL }}" title={{.Title}}
+              class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} dropdown-item">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </li>
+        {{ else }}
+        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }} nav-item">
+          <a href="{{ .URL | safeURL }}" title={{.Title}} class="nav-link">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+      <form class="form-inline">
+        <button type="button" onclick="location.href={{ .Site.Params.loginURL }}"
+          class="button button-small button-tertiary button-label-small-regular">{{.Site.Data.label.button.login}}</button>
+        <button type="button" onclick="location.href={{ .Site.Params.signupURL }}"
+          class="button button-small button-tertiary button-label-small-regular">{{.Site.Data.label.button.signup}}</button>
+      </form>
+    </div>
   </div>
   </div>
 </nav>
