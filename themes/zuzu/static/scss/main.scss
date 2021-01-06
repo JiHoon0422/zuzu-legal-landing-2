@@ -2,9 +2,8 @@
 * ! This file should only contain your imports! 
 */
 
-@import 'abstract/variable';
-@import 'base/_reset', 'base/animation';
-@import 'components/link', 'components/button', 'components/link',
-  'components/navigation', 'components/card', 'components/icon',
-  'components/banner';
-@import 'layout/footer';
+@import "abstract/variable";
+@import "base/_reset", "base/animation";
+@import "components/link", "components/button", "components/link", "components/navigation", "components/card",
+  "components/icon", "components/banner";
+@import "layout/footer";

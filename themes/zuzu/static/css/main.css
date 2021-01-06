@@ -99,7 +99,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -548,9 +548,37 @@ nav.main-nav .nav-item .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.4rem;
-  background-color: #9d50bb;
+  padding: 0.8rem 2.4rem;
+  background: -webkit-gradient(linear, right top, left top, from(#9d50bb), to(#6e48aa));
+  background: linear-gradient(270deg, #9d50bb, #6e48aa);
+  background-size: 400% 400%;
+  -webkit-animation: GradientAnimation 4s ease-out infinite;
+          animation: GradientAnimation 4s ease-out infinite;
   color: #ffffff;
+}
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /** 
