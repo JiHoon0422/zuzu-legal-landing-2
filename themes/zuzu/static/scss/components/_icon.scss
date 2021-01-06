@@ -1,0 +1,17 @@
+@import '../abstract/variable';
+
+.feather-8 {
+  width: $baseUnit;
+}
+.feather-16 {
+  width: $baseUnit * 2;
+  height: $baseUnit * 2;
+}
+.feather-24 {
+  width: $baseUnit * 3;
+  height: $baseUnit * 3;
+}
+.feather-32 {
+  width: $baseUnit * 4;
+  height: $baseUnit * 4;
+}

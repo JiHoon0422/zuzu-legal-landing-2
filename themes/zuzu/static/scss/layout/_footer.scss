@@ -1,8 +1,9 @@
-@import "../base/typography", "../abstract/variable";
+@import '../base/typography';
+@import '../abstract/variable';
 
 footer {
   width: 100%;
-  background-color: $footerBackgroundColor;
+  background-color: $white;
 
   .footer-inner {
     max-width: 1024px;
@@ -24,14 +25,13 @@ footer {
       }
     }
     .footer-group-title {
-      @extend .text-small;
       margin-bottom: $baseUnit * 0.5;
-      font-weight: $medium;
       color: $bodyText;
+      @include button-label-medium($medium);
     }
     .footer-group-list {
-      @extend .text-small;
-      padding: $baseUnit * 0.5 0;
+      padding: $baseUnit * 0.75 0;
+      @include button-label-small($medium);
     }
     .footer-group-list-company-info {
       @extend .footer-group-list;

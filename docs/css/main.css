@@ -1,0 +1,320 @@
+/** 
+* ! This file should only contain your imports! 
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.row + .row {
+  margin-top: 2.4rem;
+}
+
+button[onclick] {
+  background-color: red !important;
+}
+
+/** 
+ * * NOTICE 
+  We use fluid typography system.
+  https://css-tricks.com/snippets/css/fluid-typography/
+  https://css-tricks.com/simplified-fluid-typography/
+ */
+/** 
+ * * Type Scale Starts
+ * Major-third Modular Type Scale
+ * https://type-scale.com/
+*/
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  letter-spacing: -0.04rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.03rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+  letter-spacing: -0.02rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+  letter-spacing: -0.02rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: -0.02rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: -0.01rem;
+}
+
+small,
+.text-small,
+footer .footer-group .footer-group-title,
+footer .footer-group .footer-group-list,
+footer .footer-group .footer-group-list-company-info {
+  font-size: 0.8rem;
+  letter-spacing: 0.01rem;
+}
+
+/**
+ * * Type Scale Starts Ends */
+a.no-decoration {
+  color: rgba(0, 0, 0, 0.38);
+  text-decoration: none;
+}
+
+a.no-decoration:hover {
+  text-decoration: underline;
+}
+
+/** 
+ * * NOTICE 
+  We use fluid typography system.
+  https://css-tricks.com/snippets/css/fluid-typography/
+  https://css-tricks.com/simplified-fluid-typography/
+ */
+/** 
+ * * Type Scale Starts
+ * Major-third Modular Type Scale
+ * https://type-scale.com/
+*/
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 1280));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  letter-spacing: -0.04rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.03rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+  letter-spacing: -0.02rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+  letter-spacing: -0.02rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: -0.02rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: -0.01rem;
+}
+
+small,
+.text-small,
+footer .footer-group .footer-group-title,
+footer .footer-group .footer-group-list,
+footer .footer-group .footer-group-list-company-info {
+  font-size: 0.8rem;
+  letter-spacing: 0.01rem;
+}
+
+/**
+ * * Type Scale Starts Ends */
+footer {
+  width: 100%;
+  background-color: #eaecf0;
+}
+
+footer .footer-inner {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.4rem;
+}
+
+footer .row + .row {
+  margin-top: 1.6rem;
+}
+
+footer .footer-group .footer-group-title a,
+footer .footer-group .footer-group-title p,
+footer .footer-group .footer-group-list a,
+footer .footer-group .footer-group-list-company-info a,
+footer .footer-group .footer-group-list p,
+footer .footer-group .footer-group-list-company-info p {
+  font-size: inherit;
+}
+
+footer .footer-group .footer-group-title {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #535353;
+}
+
+footer .footer-group .footer-group-list, footer .footer-group .footer-group-list-company-info {
+  padding: 0.4rem 0;
+}
+
+footer .footer-group .footer-group-list-company-info {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.38);
+}
+/*# sourceMappingURL=main.css.map */

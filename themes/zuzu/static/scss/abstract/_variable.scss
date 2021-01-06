@@ -4,6 +4,7 @@
 $primary: #3c855a;
 $primaryLight: #4aa570;
 $primaryHover: #408f61;
+$secondary: #9d50bb;
 
 // * BLACK AND WHITE
 $bodyText: #535353;
@@ -33,10 +34,16 @@ $baseUnit: 0.8rem;
 $gutter: calc($unit * 3);
 
 // URL VARIABLE
-$base-img-url: "/images";
+$base-img-url: '/images';
 
 // FONT-WEIGHT
 $regular: 400;
 $medium: 500;
 $bold: 700;
 $black: 900;
+
+// ANIMATION
+$default-curve: ease-out;
+$default-duration: 0.121s;
+$default-direction: alternate;
+$default-iteration-count: infinite;

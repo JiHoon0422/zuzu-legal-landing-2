@@ -1,6 +1,11 @@
-@import "../abstract/variable";
+@import '../abstract/variable';
 
-// * We can use robotomized owl here
+// Default adjecent row margin
 .row + .row {
-    margin-top: $baseUnit * 3;
+  margin-top: $baseUnit * 3;
+}
+
+// Add a pointer cursor style to every tag with onclick
+*[onclick] {
+  cursor: pointer;
 }

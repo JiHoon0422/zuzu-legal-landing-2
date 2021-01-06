@@ -2,6 +2,9 @@
 * ! This file should only contain your imports! 
 */
 
-@import "base/_reset", "base/global.scss", "base/_typography";
-@import "components/link", "components/navigation";
-@import "layout/footer.scss";
+@import 'abstract/variable';
+@import 'base/_reset', 'base/animation';
+@import 'components/link', 'components/button', 'components/link',
+  'components/navigation', 'components/card', 'components/icon',
+  'components/banner';
+@import 'layout/footer';

@@ -1,0 +1,42 @@
+@import "../base/typography", "../abstract/variable";
+
+footer {
+  width: 100%;
+  background-color: $footerBackgroundColor;
+
+  .footer-inner {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: $baseUnit * 3;
+  }
+
+  .row + .row {
+    margin-top: $baseUnit * 2;
+  }
+
+  .footer-group {
+    .footer-group-title,
+    .footer-group-list {
+      a,
+      p {
+        font-size: inherit;
+      }
+    }
+    .footer-group-title {
+      @extend .text-small;
+      margin-bottom: $baseUnit * 0.5;
+      font-weight: $medium;
+      color: $bodyText;
+    }
+    .footer-group-list {
+      @extend .text-small;
+      padding: $baseUnit * 0.5 0;
+    }
+    .footer-group-list-company-info {
+      @extend .footer-group-list;
+      padding: 0;
+      color: $disabledText;
+    }
+  }
+}

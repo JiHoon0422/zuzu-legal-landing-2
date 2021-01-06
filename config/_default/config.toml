@@ -1,0 +1,145 @@
+baseURL = "/"
+languageCode = "ko"
+DefaultContentLanguage = "ko"
+title = "주주 리걸"
+theme = "zuzu"
+enableEmoji = true
+enableRobotsTXT = true
+SectionPagesMenu = "main"
+publishDir = "docs"
+googleAnalytics = ""
+canonifyurls = true
+
+#Configure Site Parameters
+[params]
+author = "Kodebox"
+description = "주주총회·이사회 진행부터, 등기까지!"
+favicon = "/assets/favicon"
+signupURL = "https://legal-app.zuzu.network/signup"
+loginURL = "https://legal-app.zuzu.network/login"
+doNotLoadAnimations = false
+googleSiteVerify = ""
+
+[menu]
+
+[[menu.main]]
+identifier = "agendas"
+name = "지원 안건"
+url = "/agendas/"
+title = "지원 안건"
+weight = 1
+
+[[menu.main]]
+identifier = "captial"
+name = "자본금 변경 관련"
+url = "/agendas/capital"
+parent = "agendas"
+title = "자본금 변경"
+weight = 1
+
+[[menu.main]]
+identifier = "director-change"
+name = "임원 변경 관련"
+url = "/agendas/director-change"
+parent = "agendas"
+title = "임원 변경"
+weight = 2
+
+[[menu.main]]
+identifier = "AoIChange"
+name = "정관 변경 관련"
+url = "/agendas/aoi-change"
+parent = "agendas"
+title = "정관 변경"
+weight = 3
+
+[[menu.main]]
+identifier = "Option"
+name = "스톡옵션 관련"
+url = "/agendas/option"
+parent = "agendas"
+title = "스톡옵션"
+weight = 4
+
+[[menu.main]]
+identifier = "documents"
+name = "생성 문서"
+title = "생성 문서"
+weight = 2
+
+[[menu.main]]
+identifier = "generated-document"
+name = "회사 등록 시 자동 생성 문서"
+url = "/documents/generated-document"
+parent = "documents"
+title = "회사 등록 시 자동 생성 문서"
+weight = 1
+
+[[menu.main]]
+identifier = "template-document"
+name = "기본 템플릿 다운로드"
+url = "/documents/template-document"
+parent = "documents"
+title = "기본 템플릿"
+weight = 2
+
+[[menu.main]]
+identifier = "pricing"
+name = "이용 가격"
+url = "/pricing/"
+title = "이용 가격"
+weight = 3
+
+[[menu.main]]
+identifier = "voucher"
+name = "비대면 바우처"
+title = "비대면 바우처"
+weight = 4
+
+[[menu.main]]
+identifier = "voucher-introduction"
+name = "비대면 바우처 소개"
+url = "/voucher/coupon"
+parent = "voucher"
+title = "비대면 바우처 소개"
+weight = 1
+
+[[menu.main]]
+identifier = "voucher-coupon"
+name = "비대면 바우처란 쿠폰"
+url = "/voucher/coupon"
+parent = "voucher"
+title = "비대면 바우처 쿠폰"
+weight = 1
+
+[[menu.main]]
+identifier = "voucher-guide"
+name = "비대면 바우처란 사용 방법"
+url = "/voucher/guide"
+parent = "voucher"
+title = "비대면 바우처 사용 방법"
+weight = 1
+
+[[menu.main]]
+identifier = "guide"
+name = "가이드"
+url = "/guide/"
+title = "주주 리걸 사용 가이드"
+weight = 5
+
+# Add menu.footer
+# //
+# Set up build setting
+[build]
+noJSConfigInAssets = false
+useResourceCacheWhen = "fallback"
+writeStats = false
+
+#Configure Sitemap.
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
+
+[permalinks]
+"/" = ":title"

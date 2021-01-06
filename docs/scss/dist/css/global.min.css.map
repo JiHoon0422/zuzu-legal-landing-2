@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAG,IAAI,AAAC,CACR,UAAU,CAAE,MAAa,CAC5B",
+    "sources": [
+        "../../base/global.scss",
+        "../../abstract/_variable.scss"
+    ],
+    "names": [],
+    "file": "global.min.css"
+}

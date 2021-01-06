@@ -1,12 +1,33 @@
+@import '../abstract/variable';
+@import '../base/typography';
+
 nav {
-    // MAIN NAVIGATION STARTS
-    &.main-nav {
-        max-width: 1072px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  &.main-nav {
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: $baseUnit * 1.5 $baseUnit * 3;
+
+    .navbar-brand {
+      padding: $baseUnit * 0.5 $baseUnit;
+      .logo {
+        width: $baseUnit * 9;
+      }
     }
-    // MAIN NAVIGATION ENDS
+
+    .desktop-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-item {
+      .nav-link {
+        @include button-label-small($regular);
+        color: $bodyText;
+        padding: $baseUnit * 0.5 $baseUnit;
+      }
+    }
+  }
 }

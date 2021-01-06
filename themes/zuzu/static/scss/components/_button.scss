@@ -1,0 +1,115 @@
+@import '../abstract/variable';
+@import '../base/typography', '../base/global', '../base/animation';
+
+.button {
+  /** 
+  * * BUTTON COMMON STYLE
+  */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $baseUnit * 0.5 $baseUnit;
+  background-color: transparent;
+  border-radius: $baseUnit * 0.75;
+  border: none;
+  transition: all $default-duration $default-curve;
+
+  /** 
+  * * BUTTON SIZE: large, medium, small
+  */
+  &-large {
+    padding: $baseUnit * 1.5 $baseUnit * 3;
+    background-color: $white;
+    @include button-label-large($medium);
+  }
+  &-medium {
+    padding: $baseUnit * 1 $baseUnit * 1.5;
+    @include button-label-medium($medium);
+  }
+  &-small {
+    padding: $baseUnit * 0.5 $baseUnit;
+  }
+
+  /** 
+  * * BUTTON TYPOGRAPHY
+  */
+
+  // LARGE BY FONT WEIGHT
+  &-label-large-black {
+    @include button-label-large($black);
+  }
+
+  &-label-large-bold {
+    @include button-label-large($bold);
+  }
+
+  &-label-large-medium {
+    @include button-label-large($medium);
+  }
+
+  &-label-large-regular {
+    @include button-label-large($regular);
+  }
+
+  // MEDIUM BY FONT WEIGHT
+
+  &-label-medium-black {
+    @include button-label-medium($black);
+  }
+
+  &-label-medium-bold {
+    @include button-label-medium($bold);
+  }
+
+  &-label-medium-medium {
+    @include button-label-medium($medium);
+  }
+
+  &-label-medium-regular {
+    @include button-label-medium($regular);
+  }
+
+  // SMALL BY FONT WEIGHT
+
+  &-label-small-black {
+    @include button-label-small($black);
+  }
+
+  &-label-small-bold {
+    @include button-label-small($bold);
+  }
+
+  &-label-small-medium {
+    @include button-label-small($medium);
+  }
+
+  &-label-small-regular {
+    @include button-label-small($regular);
+  }
+
+  /** 
+  * * BUTTON PRIORITY: primary, secondary, tertiary
+  */
+  &-primary {
+    color: $white;
+    background-color: $primaryLight;
+    border: 1px solid $primary;
+  }
+  &-secondary {
+    color: $bodyText;
+    background-color: $secondaryButtonBackground;
+    border: 1px solid $secondaryButtonStroke;
+  }
+  &-tertiary {
+    color: $bodyText;
+    background-color: transparent;
+  }
+
+  /** 
+  * * SVG ANIMATION
+  */
+  svg.with-animation {
+    @include animation-mixin-0-100(right, transform, 0rem, 2rem);
+    @include animation(right);
+  }
+}

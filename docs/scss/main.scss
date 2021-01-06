@@ -1,6 +1,7 @@
-@use "reset";
-@use "typography";
+/** 
+* ! This file should only contain your imports! 
+*/
 
-html {
-    font-color: red;
-}
+@import 'base/_reset', 'base/global.scss', 'base/_typography';
+@import 'components/link', 'components/navigation';
+@import 'layout/footer.scss';
