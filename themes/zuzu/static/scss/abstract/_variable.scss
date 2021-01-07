@@ -29,12 +29,11 @@ $labelText: #444444;
 $white: #ffffff;
 $footerBackgroundColor: rgb(234, 236, 240);
 
-// * UNIT
-$baseUnit: 0.8rem;
-$gutter: calc($unit * 3);
+$baseUnit: 0.75rem;
+$gutter: $baseUnit * 3;
 
 // URL VARIABLE
-$base-img-url: '/images';
+$base-img-url: "assets/images";
 
 // FONT-WEIGHT
 $regular: 400;

@@ -3,7 +3,7 @@
 */
 
 @import "abstract/variable";
-@import "base/_reset", "base/animation", "base/section.scss";
+@import "base/_reset", "base/global", "base/animation", "base/typography", "base/section";
 @import "components/link", "components/button", "components/link", "components/navigation", "components/card",
-  "components/icon", "components/banner";
+    "components/icon", "components/banner", "components/dropdown", "components/lottieplayer";
 @import "layout/footer";

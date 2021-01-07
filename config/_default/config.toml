@@ -5,16 +5,13 @@ title = "주주 리걸"
 theme = "zuzu"
 enableEmoji = true
 enableRobotsTXT = true
-SectionPagesMenu = "main"
 publishDir = "docs"
 googleAnalytics = ""
 canonifyurls = true
 
-#Configure Site Parameters
 [params]
-author = "Kodebox"
+author = "주주 리걸"
 description = "주주총회·이사회 진행부터, 등기까지!"
-favicon = "/assets/favicon"
 signupURL = "https://legal-app.zuzu.network/signup"
 loginURL = "https://legal-app.zuzu.network/login"
 doNotLoadAnimations = false
@@ -25,14 +22,14 @@ googleSiteVerify = ""
 [[menu.main]]
 identifier = "agendas"
 name = "지원 안건"
-url = "/agendas/"
+url = "/agendas"
 title = "지원 안건"
 weight = 1
 
 [[menu.main]]
-identifier = "captial"
+identifier = "captial-change"
 name = "자본금 변경 관련"
-url = "/agendas/capital"
+url = "/agendas/capital-change/"
 parent = "agendas"
 title = "자본금 변경"
 weight = 1
@@ -40,23 +37,23 @@ weight = 1
 [[menu.main]]
 identifier = "director-change"
 name = "임원 변경 관련"
-url = "/agendas/director-change"
+url = "/agendas/director-change/"
 parent = "agendas"
 title = "임원 변경"
 weight = 2
 
 [[menu.main]]
-identifier = "AoIChange"
+identifier = "aoi-change"
 name = "정관 변경 관련"
-url = "/agendas/aoi-change"
+url = "/agendas/aoi-change/"
 parent = "agendas"
 title = "정관 변경"
 weight = 3
 
 [[menu.main]]
-identifier = "Option"
+identifier = "option"
 name = "스톡옵션 관련"
-url = "/agendas/option"
+url = "/agendas/option/"
 parent = "agendas"
 title = "스톡옵션"
 weight = 4
@@ -70,7 +67,7 @@ weight = 2
 [[menu.main]]
 identifier = "generated-document"
 name = "회사 등록 시 자동 생성 문서"
-url = "/documents/generated-document"
+url = "/documents/generated-document/"
 parent = "documents"
 title = "회사 등록 시 자동 생성 문서"
 weight = 1
@@ -78,17 +75,10 @@ weight = 1
 [[menu.main]]
 identifier = "template-document"
 name = "기본 문서 템플릿 다운로드"
-url = "/documents/template-document"
+url = "/documents/template-document/"
 parent = "documents"
 title = "기본 문서 템플릿"
 weight = 2
-
-[[menu.main]]
-identifier = "pricing"
-name = "이용 가격"
-url = "/pricing/"
-title = "이용 가격"
-weight = 3
 
 [[menu.main]]
 identifier = "voucher"
@@ -99,7 +89,7 @@ weight = 4
 [[menu.main]]
 identifier = "voucher-introduction"
 name = "비대면 바우처 소개"
-url = "/voucher/coupon"
+url = "/voucher/introduction/"
 parent = "voucher"
 title = "비대면 바우처 소개"
 weight = 1
@@ -107,7 +97,7 @@ weight = 1
 [[menu.main]]
 identifier = "voucher-coupon"
 name = "비대면 바우처 쿠폰"
-url = "/voucher/coupon"
+url = "/voucher/coupon/"
 parent = "voucher"
 title = "비대면 바우처 쿠폰"
 weight = 2
@@ -115,27 +105,55 @@ weight = 2
 [[menu.main]]
 identifier = "voucher-guide"
 name = "비대면 바우처 사용 방법"
-url = "/voucher/guide"
+url = "/voucher/voucher-guide/"
 parent = "voucher"
 title = "비대면 바우처 사용 방법"
 weight = 3
 
 [[menu.main]]
-identifier = "guide"
-name = "가이드"
-url = "/guide/"
-title = "주주 리걸 사용 가이드"
+identifier = "resource"
+name = "리소스"
+url = "/resource"
+title = "리소스"
 weight = 5
 
-# Add menu.footer
-# //
-# Set up build setting
+[[menu.main]]
+identifier = "resource-guide"
+name = "주주 리걸 사용법"
+url = "/guide/guide/"
+title = "주주 리걸 사용법"
+parent = "resource"
+weight = 1
+
+[[menu.main]]
+identifier = "resource-team"
+name = "주주 팀 소개"
+url = "/guide/team/"
+title = "주주 팀 소개"
+parent = "resource"
+weight = 2
+
+[[menu.main]]
+identifier = "resource-recruit"
+name = "리크루팅"
+url = "/guide/recruit/"
+title = "리크루팅"
+parent = "resource"
+weight = 3
+
+[[menu.main]]
+identifier = "resource-update"
+name = "업데이트 소식"
+url = "/guide/recruit/"
+title = "업데이트 소식"
+parent = "resource"
+weight = 4
+
 [build]
 noJSConfigInAssets = false
 useResourceCacheWhen = "fallback"
 writeStats = false
 
-#Configure Sitemap.
 [sitemap]
 changefreq = "weekly"
 filename = "sitemap.xml"
@@ -143,3 +161,54 @@ priority = 0.5
 
 [permalinks]
 "/" = ":title"
+
+[privacy]
+
+[privacy.disqus]
+disable = false
+
+[privacy.googleAnalytics]
+anonymizeIP = false
+disable = false
+respectDoNotTrack = false
+useSessionStorage = false
+
+[privacy.instagram]
+disable = false
+simple = false
+
+[privacy.twitter]
+disable = false
+enableDNT = false
+simple = false
+
+[privacy.vimeo]
+disable = false
+enableDNT = false
+simple = false
+
+[privacy.youtube]
+disable = false
+privacyEnhanced = false
+
+[caches]
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = -1
+
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = -1
+
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = -1
+
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = -1
+
+[caches.modules]
+dir = ":cacheDir/modules"
+maxAge = -1

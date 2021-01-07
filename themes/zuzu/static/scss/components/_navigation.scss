@@ -1,8 +1,7 @@
-@import "../abstract/variable";
-@import "../base/typography";
-
 nav {
   &.main-nav {
+    position: relative;
+    z-index: 100;
     .navbar-inner {
       display: flex;
       align-items: center;
@@ -12,7 +11,7 @@ nav {
     .navbar-brand {
       padding: $baseUnit * 0.5 $baseUnit;
       .logo {
-        width: $baseUnit * 9;
+        width: $baseUnit * 8;
       }
     }
 
@@ -23,9 +22,17 @@ nav {
 
     .nav-item {
       .nav-link {
-        @include button-label-small($regular);
+        @include body-text(1, $regular);
         color: $bodyText;
         padding: $baseUnit * 0.5 $baseUnit;
+      }
+    }
+    .active {
+      font-weight: $bold;
+      color: $primaryLight;
+      .nav-link {
+        color: inherit;
+        font-weight: inherit;
       }
     }
   }

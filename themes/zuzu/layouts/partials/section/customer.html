@@ -1,0 +1,38 @@
+<section id="customer">
+    <div class="container">
+        <div class="row">
+            {{ range $.Site.Data.section.common}}
+                <h2 class="section-title text-center">
+                    {{ .customerSectionTitle}}
+                </h2>
+                <h3 class="section-subtitle text-center">
+                    {{ .customerSectionSubTitle}}<h3>
+            {{end}}
+        </div>
+
+        <div class="row">
+            {{ range $.Site.Data.section.customer}}
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="20" data-aos-delay={{ .delay}} data-aos-anchor="#customer">
+                    <div class="custom-card">
+                        <div class="custom-card-description">
+                            <h5>
+                                {{ .review}}
+                            </h5>
+                        </div>
+                        <div class="custom-card-meta">
+                            <img class="custom-card-meta-image" src="https://via.placeholder.com/56" />
+                            <div class="custom-card-meta-text">
+                                <p>
+                                    {{ .name}}
+                                </p>
+                                <p>
+                                    {{ .companyAndRole}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>

@@ -1,20 +1,21 @@
-<section id="main">
+<section id="main" class="background-dim vh-80">
     <div class="container">
         <div class="row">
-            <h1>{{.Site.Data.section.main.title}}</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-7"><iframe width="100%" height="400" src="https://www.youtube.com/embed/P0Pm4a-QTLA"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-            <div class="col-md-5">
-                <h5>{{.Site.Data.section.main.content}}</h5>
-                <p>{{.Site.Data.section.main.customer}}</p>
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src={{.Site.Data.link.common.sparkle}}
+                        class="custom-icon-56" />
+                    <h1>{{.Params.title}}</h1>
+                    <img src={{.Site.Data.link.common.sparkle}}
+                        class="custom-icon-56 flip-horizontal" />
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h4 class="section-subtitle text-center">{{.Params.content}}</h4>
             </div>
         </div>
-        <div class="row text-center">
-            <h4>{{.Site.Data.section.main.customerMessage}}</h4>
+        <div class="row">
+            <img data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-offset="20" src={{ .Params.mainImage }}/>
         </div>
     </div>
 </section>

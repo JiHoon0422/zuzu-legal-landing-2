@@ -16,16 +16,16 @@
             aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
             {{ .Name }}
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             {{ range .Children }}
-            <a href="{{ .URL | safeURL }}" title={{.Title}}
-              class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} dropdown-item">{{ .Name }}</a>
+            <a href="{{ .URL | relURL }}" title={{.Title}}
+              class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} dropdown-item custom-dropdown-item">{{ .Name }}</a>
             {{ end }}
           </div>
         </li>
         {{ else }}
-        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }} nav-item">
-          <a href="{{ .URL | safeURL }}" title={{.Title}} class="nav-link">
+        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} nav-item">
+          <a href="{{ .URL | relURL }}" title={{.Title}} class="nav-link">
             {{ .Name }}
           </a>
         </li>
@@ -34,9 +34,9 @@
       </ul>
       <form class="form-inline">
         <button type="button" onclick="location.href={{ .Site.Params.loginURL }}"
-          class="button button-small button-tertiary button-label-small-regular">{{.Site.Data.label.button.login}}</button>
-        <button type="button" onclick="location.href={{ .Site.Params.signupURL }}"
-          class="button button-small button-tertiary button-label-small-regular">{{.Site.Data.label.button.signup}}</button>
+          class="button button-small button-tertiary">{{.Site.Data.label.button.login}}</button>
+      <button type="button" onclick="location.href={{ .Site.Params.signupURL }}"
+          class="button button-small button-tertiary">{{.Site.Data.label.button.signup}}</button>
       </form>
     </div>
   </div>

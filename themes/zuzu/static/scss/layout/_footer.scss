@@ -1,6 +1,3 @@
-@import '../base/typography';
-@import '../abstract/variable';
-
 footer {
   width: 100%;
   background-color: $white;
@@ -27,11 +24,11 @@ footer {
     .footer-group-title {
       margin-bottom: $baseUnit * 0.5;
       color: $bodyText;
-      @include button-label-medium($medium);
+      @include body-text(1.3, $medium);
     }
     .footer-group-list {
       padding: $baseUnit * 0.75 0;
-      @include button-label-small($medium);
+      @include body-text(1.3, $regular);
     }
     .footer-group-list-company-info {
       @extend .footer-group-list;

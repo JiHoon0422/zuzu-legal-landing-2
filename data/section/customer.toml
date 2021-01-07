@@ -1,0 +1,23 @@
+[customer1]
+name = "김국봉"
+companyAndRole = "차이나 CEO"
+review = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+delay = "200"
+
+[customer2]
+name = "김국짱"
+companyAndRole = "아메리카 CEO"
+review = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+delay = "400"
+
+[customer3]
+name = "김국빵"
+companyAndRole = "인디아 CEO"
+review = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+delay = "600"
+
+[customer4]
+name = "김국복"
+companyAndRole = "필리핀 CEO"
+review = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+delay = "800"

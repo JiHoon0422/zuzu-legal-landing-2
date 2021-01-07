@@ -1,5 +1,21 @@
-@import "../abstract/variable";
-
 section {
-    padding: $baseUnit * 8;
+    padding: $baseUnit * 8 $baseUnit * 4;
+    position: relative;
+    z-index: 1;
+    @include background-dim("/assets/images/background.jpg", 0.15);
+
+    .vh-80 {
+        min-height: 80vh;
+    }
+
+    .section {
+        &-title {
+            @include heading2(1.75, $bold);
+            color: $subtitleText;
+        }
+        &-subtitle {
+            @include heading4(1.75, $medium);
+            color: $bodyText;
+        }
+    }
 }

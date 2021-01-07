@@ -1,6 +1,3 @@
-@import '../abstract/variable';
-@import '../base/typography', '../base/global', '../base/animation';
-
 .button {
   /** 
   * * BUTTON COMMON STYLE
@@ -19,72 +16,15 @@
   */
   &-large {
     padding: $baseUnit * 1.5 $baseUnit * 3;
-    background-color: $white;
-    @include button-label-large($medium);
+    @include heading4(1, $bold);
   }
   &-medium {
     padding: $baseUnit * 1 $baseUnit * 1.5;
-    @include button-label-medium($medium);
+    @include heading5(1, $bold);
   }
   &-small {
     padding: $baseUnit * 0.5 $baseUnit;
-  }
-
-  /** 
-  * * BUTTON TYPOGRAPHY
-  */
-
-  // LARGE BY FONT WEIGHT
-  &-label-large-black {
-    @include button-label-large($black);
-  }
-
-  &-label-large-bold {
-    @include button-label-large($bold);
-  }
-
-  &-label-large-medium {
-    @include button-label-large($medium);
-  }
-
-  &-label-large-regular {
-    @include button-label-large($regular);
-  }
-
-  // MEDIUM BY FONT WEIGHT
-
-  &-label-medium-black {
-    @include button-label-medium($black);
-  }
-
-  &-label-medium-bold {
-    @include button-label-medium($bold);
-  }
-
-  &-label-medium-medium {
-    @include button-label-medium($medium);
-  }
-
-  &-label-medium-regular {
-    @include button-label-medium($regular);
-  }
-
-  // SMALL BY FONT WEIGHT
-
-  &-label-small-black {
-    @include button-label-small($black);
-  }
-
-  &-label-small-bold {
-    @include button-label-small($bold);
-  }
-
-  &-label-small-medium {
-    @include button-label-small($medium);
-  }
-
-  &-label-small-regular {
-    @include button-label-small($regular);
+    @include body-text(1, $regular);
   }
 
   /** 
