@@ -8,7 +8,6 @@ enableRobotsTXT = true
 publishDir = "docs"
 googleAnalytics = " "
 canonifyurls = true
-relativeURLs = true
 
 [params]
 author = "주주 리걸"
