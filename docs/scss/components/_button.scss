@@ -1,0 +1,55 @@
+.button {
+  /**
+  * * BUTTON COMMON STYLE
+  */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $baseUnit * 0.5 $baseUnit;
+  background-color: transparent;
+  border-radius: $baseUnit * 0.75;
+  border: none;
+  transition: all $default-duration $defualt-easeing;
+
+  /**
+  * * BUTTON SIZE: large, medium, small
+  */
+  &-large {
+    padding: $baseUnit * 1.5 $baseUnit * 3;
+    @include heading4(1, $bold);
+  }
+  &-medium {
+    padding: $baseUnit * 1 $baseUnit * 1.5;
+    @include heading5(1, $bold);
+  }
+  &-small {
+    padding: $baseUnit * 0.5 $baseUnit;
+    @include body-text(1, $regular);
+  }
+
+  /**
+  * * BUTTON PRIORITY: primary, secondary, tertiary
+  */
+  &-primary {
+    color: $white;
+    background-color: $primaryLight;
+    border: 1px solid $primary;
+  }
+  &-secondary {
+    color: $bodyText;
+    background-color: $secondaryButtonBackground;
+    border: 1px solid $secondaryButtonStroke;
+  }
+  &-tertiary {
+    color: $bodyText;
+    background-color: transparent;
+  }
+
+  /**
+  * * SVG ANIMATION
+  */
+  svg.with-animation {
+    @include animation-mixin-0-100(right, transform, 0rem, 2rem);
+    @include animation(right);
+  }
+}

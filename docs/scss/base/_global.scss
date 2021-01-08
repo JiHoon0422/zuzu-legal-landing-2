@@ -1,8 +1,81 @@
-@import '../abstract/variable';
-
-// * We can use robotomized owl here
+// layout level
 .row + .row {
-  margin-top: $baseUnit * 3;
+  margin-top: $baseUnit * 4;
 }
 
-//
+// component level
+*[onclick] {
+  cursor: pointer;
+}
+
+.flip-horizontal {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+// Mixin functions
+
+@mixin margin-horizontal-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin margin-vertical-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@mixin border-radius-default {
+  border-radius: $baseUnit * 0.75;
+}
+
+@mixin gradient-background-primary {
+  background-color: linear-gradient(90deg, #36b06a 0%, #43a5ba 84.16%);
+}
+
+/** To do: Add Gradient Background Secondary (We already use in banner.scss) */
+
+@mixin box-shadow-e-1 {
+  box-shadow: 0 8px 14px 0 rgba(56, 64, 82, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+/** To do: Change box-shadow to function */
+
+@mixin word-break($max-width) {
+  max-width: $max-width;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin background-dim($url, $opacity) {
+  &.background-dim {
+    &:after {
+      content: "";
+      background-image: url($url);
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-size: cover;
+      opacity: $opacity;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//Global media query
+
+@media screen and (max-width: 768px) {
+  *[class^="col-md"] + *[class^="col-md"] {
+    margin-top: $baseUnit * 3;
+  }
+}

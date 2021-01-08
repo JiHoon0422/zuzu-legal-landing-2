@@ -1,0 +1,24 @@
+@mixin animation(
+  $name,
+  $duration: $default-duration,
+  $curve: $defualt-easeing,
+  $direction: $default-direction,
+  $iteration-count: $default-iteration-count
+) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $curve;
+  animation-direction: $direction;
+  animation-iteration-count: $iteration-count;
+}
+
+@mixin animation-mixin-0-100($name, $property, $from, $to) {
+  @keyframes #{name} {
+    0% {
+      $property: translateX($from);
+    }
+    100% {
+      $property: translateX($to);
+    }
+  }
+}

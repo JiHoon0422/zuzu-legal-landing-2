@@ -1,56 +1,40 @@
-/** 
- * * NOTICE 
-  We use fluid typography system.
+/**
+ * * NOTICE
+  FLUID TYPOGRAPHY SYSTEM
   https://css-tricks.com/snippets/css/fluid-typography/
   https://css-tricks.com/simplified-fluid-typography/
  */
 
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
-
-@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
-
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(
-          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
-            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
-        );
-      }
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
-    }
-  }
-}
-
-$min_width: 320px;
-$max_width: 1600px;
-$min_font: 16px;
-$max_font: 20px;
-
-/** 
- * * Type Scale Starts
- * Major-third Modular Type Scale
+/**
+ * * TYPE SCALE STARTS;
+ * MAJOR-THIRD(* 1.25) MODULAR TYPE SCALE
  * https://type-scale.com/
 */
 
 html {
-  font-family: "Noto Sans KR", sans-serif;
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  font-family: "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /** JUST IN CASE THAT YOU'D LIKE TO ACTIVE A SYSTEM FONT ONLY  */
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  //   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.75;
 }
 
 h1 {
   margin-top: 0;
   font-size: 3.052rem;
   letter-spacing: -0.04rem;
+  font-weight: $black;
+  color: $subtitleText;
 }
 
 h2 {
@@ -86,4 +70,79 @@ small,
 }
 
 /**
- * * Type Scale Starts Ends */
+ * * TYPE SCALE ENDS;
+ */
+
+/**
+ * * TYPOGRAPHY MIXIN STARTS;
+ */
+
+@mixin inherit-text-property {
+  & > h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+  }
+}
+
+@mixin heading1($line-height, $font-weight: $black) {
+  margin-top: 0;
+  font-size: 3.052rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.04rem;
+  color: $subtitleText;
+  line-height: $line-height;
+  @include inherit-text-property;
+}
+
+@mixin heading2($line-height, $font-weight: $bold) {
+  font-size: 2.441rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.03rem;
+  line-height: $line-height;
+  @include inherit-text-property;
+}
+@mixin heading3($line-height, $font-weight: $bold) {
+  font-size: 1.953rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.02rem;
+  line-height: $line-height;
+  @include inherit-text-property;
+}
+@mixin heading4($line-height, $font-weight: $medium) {
+  font-size: 1.563rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.02rem;
+  line-height: $line-height;
+  @include inherit-text-property;
+}
+@mixin heading5($line-height, $font-weight: $medium) {
+  font-size: 1.25rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.02rem;
+  line-height: $line-height;
+  @include inherit-text-property;
+}
+@mixin body-text($line-height, $font-weight: $bold) {
+  font-size: 1rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.01rem;
+  line-height: $line-height;
+  @include inherit-text-property;
+
+  @media screen and (min-width: 368px) and (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+@mixin caption($line-height, $font-weight: $bold) {
+  font-size: 0.8rem;
+  font-weight: $font-weight;
+  letter-spacing: 0.01rem;
+  line-height: $line-height;
+  @include inherit-text-property;
+}
