@@ -1,18 +1,23 @@
-/** 
- * * NOTICE 
+/**
+ * * NOTICE
   FLUID TYPOGRAPHY SYSTEM
   https://css-tricks.com/snippets/css/fluid-typography/
   https://css-tricks.com/simplified-fluid-typography/
  */
 
-/** 
+/**
  * * TYPE SCALE STARTS;
- * MAJOR-THIRD MODULAR TYPE SCALE
+ * MAJOR-THIRD(* 1.25) MODULAR TYPE SCALE
  * https://type-scale.com/
 */
 
 html {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /** JUST IN CASE THAT YOU'D LIKE TO ACTIVE A SYSTEM FONT ONLY  */
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  //   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
   font-size: 14px;
 }
 
@@ -21,7 +26,7 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 h1 {
@@ -69,7 +74,7 @@ small,
  */
 
 /**
- * * TYPOGRAPHY MIXIN;
+ * * TYPOGRAPHY MIXIN STARTS;
  */
 
 @mixin inherit-text-property {

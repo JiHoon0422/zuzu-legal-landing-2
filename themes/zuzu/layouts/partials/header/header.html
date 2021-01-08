@@ -6,7 +6,8 @@
     <button data-toggle="collapse" type="button" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
       class="navbar-toggler"><span><i data-feather="menu" class="feather-16"></i></span></button>
-    <div id="navbarSupportedContent" class="desktop-nav collapse navbar-collapse">
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}

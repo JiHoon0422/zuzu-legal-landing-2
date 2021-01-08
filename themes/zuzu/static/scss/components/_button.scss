@@ -1,5 +1,5 @@
 .button {
-  /** 
+  /**
   * * BUTTON COMMON STYLE
   */
   display: inline-flex;
@@ -9,9 +9,9 @@
   background-color: transparent;
   border-radius: $baseUnit * 0.75;
   border: none;
-  transition: all $default-duration $default-curve;
+  transition: all $default-duration $defualt-easeing;
 
-  /** 
+  /**
   * * BUTTON SIZE: large, medium, small
   */
   &-large {
@@ -27,7 +27,7 @@
     @include body-text(1, $regular);
   }
 
-  /** 
+  /**
   * * BUTTON PRIORITY: primary, secondary, tertiary
   */
   &-primary {
@@ -45,7 +45,7 @@
     background-color: transparent;
   }
 
-  /** 
+  /**
   * * SVG ANIMATION
   */
   svg.with-animation {

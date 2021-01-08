@@ -42,7 +42,9 @@ $bold: 700;
 $black: 900;
 
 // ANIMATION
-$default-curve: ease-out;
+$defualt-easeing: cubic-bezier(0.4, 0.0, 0.2, 1);
+$default-decelerated-easing: cubic-bezier(0.0, 0.0, 0.2, 1);
+$default-accelerated-easing: cubic-bezier(0.4, 0.0, 1, 1);
 $default-duration: 0.121s;
 $default-direction: alternate;
 $default-iteration-count: infinite;

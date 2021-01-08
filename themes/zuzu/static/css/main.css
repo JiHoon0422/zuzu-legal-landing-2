@@ -1,5 +1,5 @@
-/** 
-* ! This file should only contain your imports! 
+/**
+* ! This file should only contain your imports!
 */
 *,
 *:before,
@@ -136,19 +136,20 @@ input {
   }
 }
 
-/** 
- * * NOTICE 
+/**
+ * * NOTICE
   FLUID TYPOGRAPHY SYSTEM
   https://css-tricks.com/snippets/css/fluid-typography/
   https://css-tricks.com/simplified-fluid-typography/
  */
-/** 
+/**
  * * TYPE SCALE STARTS;
- * MAJOR-THIRD MODULAR TYPE SCALE
+ * MAJOR-THIRD(* 1.25) MODULAR TYPE SCALE
  * https://type-scale.com/
 */
 html {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /** JUST IN CASE THAT YOU'D LIKE TO ACTIVE A SYSTEM FONT ONLY  */
   font-size: 14px;
 }
 
@@ -157,7 +158,7 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 h1 {
@@ -204,7 +205,7 @@ small,
  * * TYPE SCALE ENDS;
  */
 /**
- * * TYPOGRAPHY MIXIN;
+ * * TYPOGRAPHY MIXIN STARTS;
  */
 section {
   padding: 6rem 3rem;
@@ -214,7 +215,7 @@ section {
 
 section.background-dim:after {
   content: "";
-  background-image: url("/assets/images/background.jpg");
+  background-image: url("/assets/images/background.webp");
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -278,7 +279,7 @@ a.no-decoration:hover {
 }
 
 .button {
-  /** 
+  /**
   * * BUTTON COMMON STYLE
   */
   display: -webkit-inline-box;
@@ -294,15 +295,15 @@ a.no-decoration:hover {
   background-color: transparent;
   border-radius: 0.5625rem;
   border: none;
-  -webkit-transition: all 0.121s ease-out;
-  transition: all 0.121s ease-out;
-  /** 
+  -webkit-transition: all 0.121s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.121s cubic-bezier(0.4, 0, 0.2, 1);
+  /**
   * * BUTTON SIZE: large, medium, small
   */
-  /** 
+  /**
   * * BUTTON PRIORITY: primary, secondary, tertiary
   */
-  /** 
+  /**
   * * SVG ANIMATION
   */
 }
@@ -392,8 +393,8 @@ a.no-decoration:hover {
           animation-name: right;
   -webkit-animation-duration: 0.121s;
           animation-duration: 0.121s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
@@ -426,6 +427,7 @@ a.no-decoration:hover {
 nav.main-nav {
   position: relative;
   z-index: 100;
+  /** Override Bootstrap */
 }
 
 nav.main-nav .navbar-inner {
@@ -443,13 +445,10 @@ nav.main-nav .navbar-brand {
 }
 
 nav.main-nav .navbar-brand .logo {
-  width: 6rem;
+  width: 6.75rem;
 }
 
-nav.main-nav .desktop-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+nav.main-nav .navbar-collapse {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -489,6 +488,34 @@ nav.main-nav .active {
 nav.main-nav .active .nav-link {
   color: inherit;
   font-weight: inherit;
+}
+
+/**
+    * * Override the default Bootstrap in the mobile and table viewport
+*/
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+  }
+  .navbar-collapse.collapsing {
+    left: -75%;
+    -webkit-transition: height 0s ease-out;
+    transition: height 0s ease-out;
+    left: 0;
+    -webkit-transition: left 300ms ease-out;
+    transition: left 300ms ease-out;
+  }
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    -webkit-transition: left 500ms ease-out;
+    transition: left 500ms ease-out;
+  }
 }
 
 /** Use 'custom' as a prefix not to override Bootstrap card' */
@@ -575,7 +602,19 @@ nav.main-nav .active .nav-link {
   margin-right: 0.25rem;
 }
 
+.feather-icon8 {
+  width: 0.75rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .custom-icon-16 {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.feather-icon16 {
   width: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -587,7 +626,19 @@ nav.main-nav .active .nav-link {
   margin-right: 0.75rem;
 }
 
+.feather-icon24 {
+  width: 2.25rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .custom-icon-32 {
+  width: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.feather-icon32 {
   width: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -599,7 +650,19 @@ nav.main-nav .active .nav-link {
   margin-right: 1.25rem;
 }
 
+.feather-icon40 {
+  width: 3.75rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .custom-icon-48 {
+  width: 4.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.feather-icon48 {
   width: 4.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -611,7 +674,19 @@ nav.main-nav .active .nav-link {
   margin-right: 1.75rem;
 }
 
+.feather-icon56 {
+  width: 5.25rem;
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .custom-icon-64 {
+  width: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.feather-icon64 {
   width: 6rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -623,30 +698,22 @@ nav.main-nav .active .nav-link {
   margin-right: 2.25rem;
 }
 
+.feather-icon72 {
+  width: 6.75rem;
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
 .custom-icon-80 {
   width: 7.5rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
-.feather-8 {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.feather-16 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.feather-24 {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.feather-32 {
-  width: 3rem;
-  height: 3rem;
+.feather-icon80 {
+  width: 7.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .banner {
@@ -689,8 +756,8 @@ nav.main-nav .active .nav-link {
   }
 }
 
-/** 
-* Override default bootstrap dropdown menu style 
+/**
+* Override default bootstrap dropdown menu style
 */
 .custom-dropdown-menu {
   background-color: white;
@@ -708,6 +775,7 @@ nav.main-nav .active .nav-link {
   letter-spacing: -0.01rem;
   line-height: 1;
   padding: 0.75rem 2.25rem;
+  color: #535353;
 }
 
 .custom-dropdown-menu .custom-dropdown-item > h1,
@@ -725,6 +793,12 @@ nav.main-nav .active .nav-link {
   .custom-dropdown-menu .custom-dropdown-item {
     font-size: 1.25rem;
   }
+}
+
+.custom-dropdown-menu .custom-dropdown-item:active {
+  background-color: transparent;
+  color: #4aa570;
+  font-weight: 700;
 }
 
 .custom-dropdown-menu .active {

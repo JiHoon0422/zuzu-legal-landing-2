@@ -9,21 +9,10 @@ $size: "8" $baseUnit, "16" $baseUnit * 2, "24" $baseUnit * 3, "32" $baseUnit * 4
     margin-left: $width/3;
     margin-right: $width/3;
   }
-}
 
-.feather-8 {
-  width: $baseUnit;
-  height: $baseUnit;
-}
-.feather-16 {
-  width: $baseUnit * 2;
-  height: $baseUnit * 2;
-}
-.feather-24 {
-  width: $baseUnit * 3;
-  height: $baseUnit * 3;
-}
-.feather-32 {
-  width: $baseUnit * 4;
-  height: $baseUnit * 4;
+  .feather-icon#{$name} {
+    width: $width;
+    margin-left: $width/3;
+    margin-right: $width/3;
+  }
 }

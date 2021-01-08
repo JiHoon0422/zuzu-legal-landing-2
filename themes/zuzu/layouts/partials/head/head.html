@@ -1,8 +1,10 @@
 <head>
-  {{- partial "head/metadata.html" . -}} 
+  <script src="/js/spinner.js"></script>
+  {{- partial "head/metadata.html" . -}}
+  {{- partial "head/favicon.html" . -}}
   {{- partial "head/prerender.html" . -}}
-  {{- partial "head/favicon.html" . -}} 
-  {{ $title := print .Site.Title " | " .Title }} 
+  {{- partial "head/spinner.html" . -}}
+  {{ $title := print .Site.Title " | " .Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
 </head>
