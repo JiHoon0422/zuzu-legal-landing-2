@@ -8,6 +8,7 @@ enableRobotsTXT = true
 publishDir = "docs"
 googleAnalytics = " "
 canonifyurls = true
+assetDir = "/asset"
 
 [params]
 author = "주주 리걸"
