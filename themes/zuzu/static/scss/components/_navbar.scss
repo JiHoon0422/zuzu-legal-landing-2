@@ -1,0 +1,70 @@
+nav {
+  &.main-nav {
+    position: relative;
+    z-index: 100;
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      padding: $baseUnit 0;
+    }
+
+    .navbar-brand {
+      padding: $baseUnit * 0.5 $baseUnit;
+      .logo {
+        width: $baseUnit * 9;
+      }
+    }
+
+    /** Override Bootstrap */
+    .navbar-collapse {
+      justify-content: space-between;
+    }
+
+    .nav-item {
+      .nav-link {
+        @include body-text(1, $regular);
+        color: $bodyText;
+        padding: $baseUnit * 0.5 $baseUnit;
+      }
+    }
+    .active {
+      font-weight: $bold;
+      color: $primaryLight;
+      .nav-link {
+        color: inherit;
+        font-weight: inherit;
+      }
+    }
+  }
+}
+
+/** 
+    * * Override the default Bootstrap in the mobile and table viewport 
+*/
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease-out;
+
+    .navbar-collapse.show {
+    }
+    left: 0;
+    transition: left 300ms ease-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-out;
+  }
+}
