@@ -1,4 +1,4 @@
-baseURL = "jihoon0422.github.io/zuzu-legal-landing-2"
+baseURL = "jihoon0422.github.io"
 languageCode = "ko"
 DefaultContentLanguage = "ko"
 title = "주주 리걸"
@@ -6,7 +6,7 @@ theme = "zuzu"
 enableEmoji = true
 enableRobotsTXT = true
 publishDir = "docs"
-googleAnalytics = ""
+googleAnalytics = " "
 canonifyurls = true
 
 [params]
