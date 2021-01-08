@@ -8,7 +8,7 @@ enableRobotsTXT = true
 publishDir = "docs"
 googleAnalytics = " "
 canonifyurls = true
-assetDir = "/asset"
+relativeURLs = true
 
 [params]
 author = "주주 리걸"
@@ -151,7 +151,6 @@ parent = "resource"
 weight = 4
 
 [build]
-noJSConfigInAssets = false
 useResourceCacheWhen = "fallback"
 writeStats = false
 
