@@ -1,33 +1,32 @@
-<section id="customer">
+<section id="customer" class="target-section section">
     <div class="container">
         <div class="row">
-            {{ range $.Site.Data.section.common}}
                 <h2 class="section-title text-center">
-                    {{ .customerSectionTitle}}
+                    출시 6개월 만에 <span class="counter-3"></span>명이 넘는 대표님이 가입하셨어요 🎉
                 </h2>
                 <h3 class="section-subtitle text-center">
-                    {{ .customerSectionSubTitle}}<h3>
-            {{end}}
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <h3>
         </div>
 
         <div class="row">
             {{ range $.Site.Data.section.customer}}
-                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="20" data-aos-delay={{ .delay}} data-aos-anchor="#customer">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay={{ .delay}} data-aos-anchor="#customer">
                     <div class="custom-card">
-                        <div class="custom-card-description">
+                        <div class="custom-card-content">
                             <h5>
                                 {{ .review}}
                             </h5>
                         </div>
                         <div class="custom-card-meta">
-                            <img class="custom-card-meta-image" src="https://via.placeholder.com/56" />
+                            <img class="custom-card-meta-image" src="https://via.placeholder.com/48" />
                             <div class="custom-card-meta-text">
-                                <p>
+                                <div>
                                     {{ .name}}
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     {{ .companyAndRole}}
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>

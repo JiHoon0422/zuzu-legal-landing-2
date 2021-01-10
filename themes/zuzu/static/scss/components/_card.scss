@@ -12,9 +12,10 @@ $card-width: 95%;
 
     /** To do: Add a card title */
 
-    &-description {
+    &-content {
         @include word-break(100%);
-        @include heading5(2);
+        @include heading5(2, $regular);
+        color: $bodyText;
     }
     &-meta {
         margin-top: $baseUnit * 2;
@@ -24,7 +25,8 @@ $card-width: 95%;
             border-radius: 100%;
         }
         &-text {
-            @include body-text(1.3);
+            @include body-text(1.75, $regular);
+            color: $subtitleText;
         }
     }
 }

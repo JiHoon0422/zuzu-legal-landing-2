@@ -6,13 +6,9 @@ $size: "8" $baseUnit, "16" $baseUnit * 2, "24" $baseUnit * 3, "32" $baseUnit * 4
 @each $name, $width in $size {
   .custom-icon-#{$name} {
     width: $width;
-    margin-left: $width/3;
-    margin-right: $width/3;
   }
 
-  .feather-icon#{$name} {
+  .feather-icon-#{$name} {
     width: $width;
-    margin-left: $width/3;
-    margin-right: $width/3;
   }
 }

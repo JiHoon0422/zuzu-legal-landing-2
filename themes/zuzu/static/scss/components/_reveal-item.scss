@@ -1,0 +1,22 @@
+.reveal {
+    &-item {
+        margin-bottom: $baseUnit;
+        background-color: $white;
+        border: 1px solid $hr;
+        border-radius: $baseUnit * 0.75;
+        padding: $baseUnit * 3 $baseUnit * 2;
+        @include flex(row, center, flex-start);
+        &-title {
+            @include body-text(1.3, $medium);
+            color: $bodyText;
+        }
+        &-content {
+            @include heading5(1.5, $bold);
+            color: $primaryLight;
+        }
+        &-image {
+            margin-right: $baseUnit;
+            border-radius: 100%;
+        }
+    }
+}

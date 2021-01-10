@@ -97,7 +97,6 @@ small,
   letter-spacing: -0.04rem;
   color: $subtitleText;
   line-height: $line-height;
-  @include inherit-text-property;
 }
 
 @mixin heading2($line-height, $font-weight: $bold) {
@@ -105,36 +104,30 @@ small,
   font-weight: $font-weight;
   letter-spacing: -0.03rem;
   line-height: $line-height;
-  @include inherit-text-property;
 }
 @mixin heading3($line-height, $font-weight: $bold) {
   font-size: 1.953rem;
   font-weight: $font-weight;
   letter-spacing: -0.02rem;
   line-height: $line-height;
-  @include inherit-text-property;
 }
 @mixin heading4($line-height, $font-weight: $medium) {
   font-size: 1.563rem;
   font-weight: $font-weight;
   letter-spacing: -0.02rem;
   line-height: $line-height;
-  @include inherit-text-property;
 }
 @mixin heading5($line-height, $font-weight: $medium) {
   font-size: 1.25rem;
   font-weight: $font-weight;
   letter-spacing: -0.02rem;
   line-height: $line-height;
-  @include inherit-text-property;
 }
 @mixin body-text($line-height, $font-weight: $bold) {
   font-size: 1rem;
   font-weight: $font-weight;
   letter-spacing: -0.01rem;
   line-height: $line-height;
-  @include inherit-text-property;
-
   @media screen and (min-width: 368px) and (max-width: 768px) {
     font-size: 1.25rem;
   }
@@ -144,5 +137,4 @@ small,
   font-weight: $font-weight;
   letter-spacing: 0.01rem;
   line-height: $line-height;
-  @include inherit-text-property;
 }

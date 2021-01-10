@@ -2,11 +2,9 @@
 <html lnag="{{.Site.Language}}">
   {{- partial "head/head.html" . -}}
   <body>
-    <main>
     {{- partial "header/banner.html" . -}}
     {{- partial "header/header.html" . -}}
     <div id="content">{{- block "main" . }}{{- end }}</div>
-    </main>
     {{- partial "footer/footer.html" . -}} 
     {{- partial "script.html" . -}}
   </body>

@@ -1,25 +1,54 @@
 section {
-    padding: $baseUnit * 8 $baseUnit * 4;
     position: relative;
     z-index: 1;
-    @include background-dim("/assets/images/background.webp", 0.15);
-
-    .vh-80 {
-        min-height: 80vh;
+    padding: $baseUnit * 8 $baseUnit * 4;
+    @include media-break-point-down {
+        padding: $baseUnit * 6 $baseUnit * 3;
     }
-
-    .section {
+    .main {
         &-title {
-            @include heading2(1.75, $bold);
+            @include heading1(1.4, $black);
             color: $subtitleText;
         }
         &-subtitle {
             @include heading4(1.75, $medium);
             color: $bodyText;
         }
+    }
+
+    .section {
+        &-title {
+            @include heading2(1.75, $bold);
+            color: $subtitleText;
+            text-align: center;
+            &-wrapper {
+                @include down-sm-flex-col;
+            }
+        }
+        &-subtitle {
+            @include heading4(1.75, $medium);
+            color: $bodyText;
+            text-align: center;
+        }
         &-description {
             @include heading5(2, $medium);
             color: $bodyText;
+        }
+    }
+
+    .feature {
+        &-item {
+            padding: $baseUnit * 4 $baseUnit * 2;
+            margin-top: $baseUnit * 4;
+            &-title {
+                @extend .section-subtitle;
+                text-align: left;
+            }
+        }
+        @at-root {
+            .feature-item + .feature-item {
+                margin-top: $baseUnit * 8;
+            }
         }
     }
 }

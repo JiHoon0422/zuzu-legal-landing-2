@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     padding: $baseUnit $baseUnit * 3;
+    &-title {
+        @include heading5(1.4, $bold);
+        margin-left: $baseUnit;
+    }
     background: linear-gradient(270deg, #6e48aa, #9d50bb);
     background-size: 400% 400%;
     animation: GradientAnimation 4s ease-out infinite;

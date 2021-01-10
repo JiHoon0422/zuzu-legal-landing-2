@@ -8,6 +8,17 @@
   cursor: pointer;
 }
 
+a:active,
+a.active,
+a:focus,
+a.focus,
+button.active,
+button:active,
+button.focus,
+button:focus {
+  outline: 0;
+}
+
 .flip-horizontal {
   transform: rotateY(180deg);
   transform-style: preserve-3d;
