@@ -6,9 +6,11 @@ $card-width: 95%;
     width: $card-width;
     margin-right: (100-$card-width)/2;
     margin-left: (100-$card-width)/2;
+    padding: $baseUnit * 2;
+    background-color: $white;
     border: 1px solid $hr;
     border-radius: $baseUnit * 0.75;
-    padding: $baseUnit * 2;
+    
 
     /** To do: Add a card title */
 

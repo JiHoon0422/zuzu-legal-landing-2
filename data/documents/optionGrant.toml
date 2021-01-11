@@ -1,0 +1,15 @@
+[document1]
+title = "스톡옵션 계약서"
+image = '/assets/images/document-thumbnail/option-grant-contract.png'
+
+[document2]
+title = "계약서 가이드 문서"
+image = '/assets/images/document-thumbnail/option-grant-contract.png'
+
+[document3]
+title = "주주총회 의사록"
+image = '/assets/images/document-thumbnail/shareholders-meeting-minutes.png'
+
+[document4]
+title = "이사회 의사록"
+image = '/assets/images/document-thumbnail/directors-meeting-minutes.png'

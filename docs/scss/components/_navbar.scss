@@ -2,6 +2,7 @@ nav {
   &.main-nav {
     position: relative;
     z-index: 100;
+    background-color: $backgroundColor;
     .navbar-inner {
       display: flex;
       align-items: center;

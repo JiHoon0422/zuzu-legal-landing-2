@@ -38,7 +38,7 @@ h5 {
 
 @mixin heading1($line-height, $font-weight: $black) {
   margin-top: 0;
-  font-size: 2.488rem;
+  font-size: 3.052rem;
   font-weight: $font-weight;
   letter-spacing: -0.04rem;
   color: $subtitleText;
@@ -46,25 +46,25 @@ h5 {
 }
 
 @mixin heading2($line-height, $font-weight: $bold) {
-  font-size: 2.074rem;
+  font-size: 2.441rem;
   font-weight: $font-weight;
   letter-spacing: -0.03rem;
   line-height: $line-height;
 }
 @mixin heading3($line-height, $font-weight: $bold) {
-  font-size: 1.728rem;
+  font-size: 1.953rem;
   font-weight: $font-weight;
   letter-spacing: -0.02rem;
   line-height: $line-height;
 }
 @mixin heading4($line-height, $font-weight: $medium) {
-  font-size: 1.44rem;
+  font-size: 1.563rem;
   font-weight: $font-weight;
   letter-spacing: -0.02rem;
   line-height: $line-height;
 }
 @mixin heading5($line-height, $font-weight: $medium) {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: $font-weight;
   letter-spacing: -0.02rem;
   line-height: $line-height;
@@ -79,7 +79,7 @@ h5 {
   }
 }
 @mixin caption($line-height, $font-weight: $bold) {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: $font-weight;
   letter-spacing: 0.01rem;
   line-height: $line-height;

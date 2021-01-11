@@ -5,9 +5,10 @@
 $primary: #3c855a;
 $primaryLight: #4aa570;
 $primaryHover: #408f61;
+$primaryGradient: linear-gradient(90deg, #36b06a 0%, #43a5ba 84.16%);
 $secondary: #9d50bb;
 
-// * BLACK AND WHITE
+// * the other colors
 $bodyText: #535353;
 $buttonStroke: #21575a;
 $disabledBackground: #dddddd;
@@ -29,6 +30,7 @@ $tableBody: #2e2e31;
 $labelText: #444444;
 $white: #ffffff;
 $footerBackgroundColor: rgb(234, 236, 240);
+$backgroundColor: #f5efe0;
 $baseUnit: 0.75rem;
 $gutter: $baseUnit * 3;
 
@@ -42,7 +44,7 @@ $bold: 700;
 $black: 900;
 
 // ANIMATION
-$defualt-easeing: cubic-bezier(0.4, 0, 0.2, 1);
+$default-easing: cubic-bezier(0.4, 0, 0.2, 1);
 $default-decelerated-easing: cubic-bezier(0, 0, 0.2, 1);
 $default-accelerated-easing: cubic-bezier(0.4, 0, 1, 1);
 $default-duration: 0.121s;

@@ -1,23 +1,15 @@
 [statistics1]
-name = "주주총회 의사록 생성"
-count = "10,000건"
+name = "의사록 생성"
+count = "17123"
 
 [statistics2]
 name = "주식청약서 생성"
-count = "10,000건"
+count = "1878"
 
 [statistics3]
-name = "스톡옵션 계약서 생성"
-count = "10,000건"
+name = "등기신청서 생성"
+count = "6178"
 
 [statistics4]
-name = "총 등기신청서 생성"
-count = "10,000건"
-
-[statistics5]
-name = "셀프 등기 횟수"
-count = "1423회"
-
-[statistics6]
-name = "등기 대행 횟수"
-count = "923회"
+name = "스톡옵션 계약서 생성"
+count = "1382"

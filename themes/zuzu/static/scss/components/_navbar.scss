@@ -1,5 +1,6 @@
 nav {
   &.main-nav {
+    background-color: $backgroundColor;
     position: relative;
     z-index: 100;
     .navbar-inner {
@@ -39,8 +40,29 @@ nav {
   }
 }
 
+.nav {
+  &-pills {
+    .nav-link.nav-link {
+      @include body-text(2, $bold);
+      color: $disabledText;
+    }
+    .nav-divider.nav-divider.nav-divider {
+      @include heading5(2, $bold);
+      color: $disabledText;
+      pointer-events: none;
+    }
+    .more.more {
+      @include body-text(2, $bold);
+    }
+    .active.active {
+      background-color: $white;
+      color: $primaryLight;
+    }
+  }
+}
+
 /** 
-    * * Override the default Bootstrap in the mobile and table viewport 
+    * * OVERRIDE THE DEFAULT BOOTSTRAP IN THE MOBILE AND TABLE VIEWPORT 
 */
 
 @media (max-width: 992px) {
@@ -53,6 +75,7 @@ nav {
     padding-bottom: 15px;
     width: 75%;
     height: 100%;
+    background-color: $white;
   }
 
   .navbar-collapse.collapsing {

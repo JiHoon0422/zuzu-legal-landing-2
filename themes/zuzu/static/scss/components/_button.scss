@@ -7,9 +7,25 @@
   justify-content: center;
   padding: $baseUnit * 0.5 $baseUnit;
   background-color: transparent;
-  border-radius: $baseUnit * 0.75;
+  border-radius: $baseUnit * 10;
   border: none;
-  transition: all $default-duration $defualt-easeing;
+  transition: all $default-duration $default-easing;
+
+  &:not(.button-tertiary) {
+    &:hover {
+      @include box-shadow-e-1;
+    }
+  }
+  &:hover {
+    & > svg {
+      transition: all $default-easing $default-duration;
+      transform: translateX(3px);
+    }
+  }
+
+  & + & {
+    margin-left: $baseUnit;
+  }
 
   /**
   * * BUTTON SIZE: large, medium, small
@@ -17,6 +33,15 @@
   &-large {
     padding: $baseUnit * 1.5 $baseUnit * 1.5 * 1.5;
     @include heading5(1, $bold);
+    margin-top: $baseUnit * 2;
+    margin-bottom: $baseUnit * 0.5;
+    span.symbol {
+      padding: $baseUnit;
+      color: $primaryLight;
+      background-color: $white;
+      border-radius: 100%;
+      @include caption(1, $bold);
+    }
   }
   &-medium {
     padding: $baseUnit * 1 $baseUnit * 1.5;
@@ -24,7 +49,7 @@
   }
   &-small {
     padding: $baseUnit * 0.5 $baseUnit;
-    @include caption(1, $regular);
+    @include caption(1, $medium);
   }
 
   /**
@@ -33,7 +58,9 @@
   &-primary {
     color: $white;
     background-color: $primaryLight;
-    border: 1px solid $primary;
+    &:hover {
+      background-color: $primaryHover;
+    }
   }
   &-secondary {
     color: $bodyText;
@@ -43,13 +70,5 @@
   &-tertiary {
     color: $bodyText;
     background-color: transparent;
-  }
-
-  /**
-  * * SVG ANIMATION
-  */
-  svg.with-animation {
-    @include animation-mixin-0-100(right, transform, 0rem, 2rem);
-    @include animation(right);
   }
 }

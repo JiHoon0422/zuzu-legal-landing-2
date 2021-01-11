@@ -1,24 +1,17 @@
 .banner {
-    display: flex;
-    align-items: center;
+    border-top: 1px solid $hr;
+    @include flex(row, center, flex-start);
     padding: $baseUnit $baseUnit * 3;
     &-title {
-        @include heading5(1.4, $bold);
-        margin-left: $baseUnit;
-    }
-    background: linear-gradient(270deg, #6e48aa, #9d50bb);
-    background-size: 400% 400%;
-    animation: GradientAnimation 4s ease-out infinite;
-    @keyframes GradientAnimation {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
+        @include flex(row, center, flex-start);
+        @include caption(1, $medium);
+        & > *:last-child {
+            margin-left: $baseUnit * 0.5;
         }
     }
-    color: $white;
+    background: $backgroundColor;
+    color: $bodyText;
+    button.button {
+        margin-left: $baseUnit * 0.5;
+    }
 }

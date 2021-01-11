@@ -1,0 +1,53 @@
+.table {
+    margin-top: $baseUnit * 2;
+    thead {
+        th,
+        td {
+            background-color: $hr;
+            padding: $baseUnit;
+            @include heading5(1.75, $bold);
+            color: $subtitleText;
+        }
+        // TO DO ADD BORDER RADIUS
+        // th:first-child {
+        //     border-top-left-radius: $baseUnit * 0.75;
+        // }
+        // th:last-child {
+        //     border-top-right-radius: $baseUnit * 0.75;
+        // }
+    }
+    tbody {
+        th,
+        td {
+            padding: $baseUnit $baseUnit * 2;
+            vertical-align: middle;
+            @include heading5(2, $medium);
+            color: $bodyText;
+        }
+        th {
+            background-color: lighten($hr, 5);
+            text-align: left;
+        }
+    }
+    &-bordered {
+        border-collapse: collapse;
+        border-radius: $baseUnit * 0.75;
+        thead {
+            tr {
+                border-color: $hr;
+                th,
+                td {
+                    border: 1px solid $hr;
+                }
+            }
+        }
+        tbody {
+            tr {
+                th,
+                td {
+                    border: 1px solid $hr;
+                }
+            }
+        }
+    }
+}

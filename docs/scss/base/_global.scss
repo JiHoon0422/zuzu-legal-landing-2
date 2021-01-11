@@ -8,6 +8,11 @@
   cursor: pointer;
 }
 
+img.fluid-100 {
+  width: 100%;
+  min-width: 320px;
+}
+
 a:active,
 a.active,
 a:focus,
@@ -38,10 +43,6 @@ button:focus {
 
 @mixin border-radius-default {
   border-radius: $baseUnit * 0.75;
-}
-
-@mixin gradient-background-primary {
-  background-color: linear-gradient(90deg, #36b06a 0%, #43a5ba 84.16%);
 }
 
 /** To do: Add Gradient Background Secondary (We already use in banner.scss) */

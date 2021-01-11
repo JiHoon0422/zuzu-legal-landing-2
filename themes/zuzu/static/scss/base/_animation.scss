@@ -1,7 +1,7 @@
 @mixin animation(
   $name,
   $duration: $default-duration,
-  $curve: $defualt-easeing,
+  $curve: $default-easing,
   $direction: $default-direction,
   $iteration-count: $default-iteration-count
 ) {

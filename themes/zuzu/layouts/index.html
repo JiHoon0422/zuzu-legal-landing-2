@@ -3,104 +3,42 @@
     <section>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-12 text-center">
                     <div class="main-title-wrapper">
-                        <img src={{.Site.Data.link.common.sparkle}} class="custom-icon-40" />
+                        <img src={{.Site.Data.link.common.sparkle}}
+                            class="custom-icon-40" alt="sparkle" />
                         <h1 class="main-title">{{.Params.title}}</h1>
-                        <h4 class="main-subtitle">{{.Params.subtitle}}</h4>
-                        <button class="button button-primary button-large">
-                            <span>시작하기</span> 
-                        </button>
+                        <img src={{.Site.Data.link.common.sparkle}}
+                            class="custom-icon-40" alt="sparkle" />
                     </div>
-                </div>
-                <div class="col-md-5  offset-md-1">
-                    <div class="row">
-                        {{ range $.Site.Data.section.statistics}}
-                        <div class="col-md-6">
-                            <div class="reveal">
-                                <div class="reveal-item">
-                                    <img src="https://via.placeholder.com/40" alt="placeholder"
-                                        class="reveal-item-image">
-                                    <div>
-                                        <div class="reveal-item-title">
-                                            {{.name}}
-                                        </div>
-                                        <div class="reveal-item-content">
-                                            {{.count}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <h4 class="main-subtitle text-center">Traditional web
+                        analytics tools help you analyze traffic data. <br/>
+                            But numbers alone can’t tell you what users really
+                            do on your site — <span class="highlight">ZUZU LEGAL will.</span></h4>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button class="button button-large
+                                button-secondary">
+                                <span style="line-height:32px;">로그인</span>
+                            </button>
+                            <button class="button button-large button-primary">
+                                <lottie-player
+                                    src="/assets/animation/trophy.json"
+                                    background="transparent" speed="1" loop
+                                    autoplay class="lottie-player-24"></lottie-player>
+                                <span>무료로 바로 시작하기</span>
+                            </button>
                         </div>
-                        {{ end }}
                     </div>
                 </div>
+                {{- partial "section/main/feature.html" . -}}
             </div>
-        </div>
-    </section>  
-
-    <!-- INCLUDE PARTAIL STARTS -->
-    {{- partial "section/customer.html" . -}}
-<!-- INCLUDE PARTIAL ENDS -->
-
-    <section id="#" class="section feature">
-        <div class="container">
-            <h2 class="section-title">
-                주주 리걸 이렇게 달라요
-                <img src="https://s3.ap-northeast-2.amazonaws.com/zuzu.network/thumbs-up.gif" alt="엄지" class="custom-icon-40"/>
-            </h2>
-            <h4 class="section-subtitle">
-                셀프 등기도 등기 대행도 다 가능한 비결!
-            </h4>
-            <!-- FEATURE1 STARTS -->
-            <div class="feature-item">
-                <div class="row feature-item-1">
-                    <div class="col-md-5">    
-                        <h5 class="feature-item-title"  data-aos="fade-up" data-aos-anchor=".feature-item-1">
-                            필요한 문서, 자동으로 만들어드려요
-                            임원 변경, 본점 이전, 상호 변경 등 10가지 이상의 안건을 지원해요.
-                            이제 안건만 선택하고 10분 내로 등기에 성공하세요.
-                        </h5>
-                    </div>
-                    <div class="col-md-7">
-                        <img src="https://via.placeholder.com/720x400" data-aos="fade-left" data-aos-anchor=".feature-item-1" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- FEATURE1 ENDS -->
-
-            <!-- FEATURE2 STARTS -->
-            <div class="feature-item">
-                <div class="row feature-item-2">
-                    <div class="col-md-7">
-                        <img src="https://via.placeholder.com/720x400" data-aos="fade-right" data-aos-anchor=".feature-item-2" alt="">
-                    </div>
-                    <div class="col-md-5">
-                        <h5 class="feature-item-title"  data-aos="fade-up" data-aos-anchor=".feature-item-2">
-                            순서대로 따라만 하면 셀프 등기 끝! 바쁘시면 등기 대행 요청도 언제든 가능해요.
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FEATURE2 ENDS-->
-
-          <!-- FEATURE3 STARTS -->
-          <div class="feature-item">
-            <div class="row feature-item-3">
-                <div class="col-md-5">    
-                    <h5 class="feature-item-title"  data-aos="fade-up" data-aos-anchor=".feature-item-3">
-                        필요한 문서, 자동으로 만들어드려요
-                        임원 변경, 본점 이전, 상호 변경 등 10가지 이상의 안건을 지원해요.
-                        이제 안건만 선택하고 10분 내로 등기에 성공하세요.
-                    </h5>
-                </div>
-                <div class="col-md-7">
-                    <img src="https://via.placeholder.com/720x400" data-aos="fade-left" data-aos-anchor=".feature-item-3" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- FEATURE3 ENDS -->
         </section>
+
+        <!-- INCLUDE PARTAIL STARTS -->
+        {{- partial "section/customer.html" . -}}
+        {{- partial "section/statistics.html" . -}}
+        {{- partial "section/cta.html" . -}}
+        <!-- INCLUDE PARTIAL ENDS -->
+
     </main>
-{{ end }}
+    {{ end }}

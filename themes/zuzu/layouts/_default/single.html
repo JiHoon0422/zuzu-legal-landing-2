@@ -1,4 +1,6 @@
 {{ define "main" }}
-{{- partial "section/main.html" . -}}
+{{- partial "section/main/jumbotron.html" . -}}
+{{ .Content }}
 {{- partial "section/customer.html" . -}}
+{{- partial "section/cta.html" . -}}
 {{ end }}

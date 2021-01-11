@@ -28,7 +28,7 @@ footer {
     }
     .footer-group-list {
       padding: $baseUnit * 0.75 0;
-      @include caption(1.3, $regular);
+      @include caption(1.5, $regular);
     }
     .footer-group-list-company-info {
       @extend .footer-group-list;
