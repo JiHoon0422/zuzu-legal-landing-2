@@ -1,8 +1,0 @@
-$size: "80" $baseUnit * 10, "160" $baseUnit * 20, "240" $baseUnit * 30, "480" $baseUnit * 60;
-
-@each $name, $width in $size {
-    .lottie-player-#{$name} {
-        width: $width;
-        height: $width;
-    }
-}
