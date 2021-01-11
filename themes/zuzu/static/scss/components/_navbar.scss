@@ -7,6 +7,9 @@ nav {
       display: flex;
       align-items: center;
       padding: $baseUnit 0;
+      @include media-break-point-down {
+        padding: $baseUnit $baseUnit * 2;
+      }
     }
 
     .navbar-brand {
@@ -20,6 +23,10 @@ nav {
     /** Override Bootstrap */
     .navbar-collapse {
       justify-content: space-between;
+      @include media-break-point-down {
+        padding: $baseUnit * 3 $baseUnit * 2;
+        @include box-shadow-e-1;
+      }
     }
 
     .nav-item {
@@ -27,10 +34,13 @@ nav {
         @include caption(1, $regular);
         color: $bodyText;
         padding: $baseUnit * 0.5 $baseUnit;
+        @include media-break-point-down {
+          @include heading4(2, $medium);
+        }
       }
     }
     .active {
-      font-weight: $bold;
+      @include caption(1, $bold);
       color: $primaryLight;
       .nav-link {
         color: inherit;
@@ -42,17 +52,31 @@ nav {
 
 .nav {
   &-pills {
+    @include down-sm-flex-row;
     .nav-link.nav-link {
       @include body-text(2, $bold);
       color: $disabledText;
+      svg,
+      span {
+        vertical-align: middle;
+      }
+      svg + span {
+        margin-left: $baseUnit * 0.5;
+      }
     }
     .nav-divider.nav-divider.nav-divider {
       @include heading5(2, $bold);
       color: $disabledText;
       pointer-events: none;
+      @include media-break-point-down {
+        display: none;
+      }
     }
     .more.more {
       @include body-text(2, $bold);
+      @include media-break-point-down {
+        display: none;
+      }
     }
     .active.active {
       background-color: $white;
@@ -80,7 +104,7 @@ nav {
 
   .navbar-collapse.collapsing {
     left: -75%;
-    transition: height 0s ease-out;
+    transition: left 0s ease-out;
 
     .navbar-collapse.show {
       left: 0;

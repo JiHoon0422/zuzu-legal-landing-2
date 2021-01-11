@@ -76,3 +76,20 @@
         @include flex(column, center, center);
     }
 }
+
+@mixin down-sm-flex-row {
+    @include flex(column, center, center);
+    @include media-break-point-down {
+        @include flex(row, center, center);
+    }
+}
+
+@mixin down-sm-row-reverse {
+    @include media-break-point-down {
+        .down-sm-row-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@include down-sm-row-reverse;

@@ -1,13 +1,14 @@
 // OVERRIDE BOOTSTRAP
 
 .badge {
+    border-radius: $baseUnit * 5;
     & + & {
         margin-left: $baseUnit * 0.5;
         margin-right: $baseUnit * 0.5;
     }
     @include flex(row, center, flex-start);
     display: inline-flex;
-    @include caption(1, $medium);
+    @include caption(1, $bold);
     &-primary {
         background-color: $primaryLight;
     }

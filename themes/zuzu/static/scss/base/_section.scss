@@ -44,6 +44,15 @@ section {
             @include heading5(2, $medium);
             color: $bodyText;
         }
+        &-anchor-image {
+            position: absolute;
+            z-index: -1;
+            width: 15rem;
+            right: 0;
+            @include media-break-point-down {
+                bottom: 0;
+            }
+        }
     }
 
     .feature {

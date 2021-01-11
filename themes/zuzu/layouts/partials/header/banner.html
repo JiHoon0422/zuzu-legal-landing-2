@@ -1,16 +1,14 @@
 <div class="banner" role="banner">
     <div class="container">
-        <div class="banner-title col-12">
+        <div class="banner-title">
             <div class="d-flex align-items-center">
-                <div class="badge badge-primary">UPDATE!</div>
-                <div class="badge badge-secondary">HOT!</div>
-                <div>주주 리걸이 비대면 바우처 공급기업으로 선정되었어요!</div>
+                <div class="badge badge-primary">UPDATE</div>
+                <div class=banner-summary>{{.Site.Data.banner.banner.title}}</div>
             </div>
-            <button class="button button-tertiary button-small">
-                <span>쿠폰 구매하기</span>
+            <button class="button button-tertiary button-small" onclick="location.href={{.Site.Data.banner.banner.link}}">
+                <span>자세히 보기</span>
                 <i data-feather="chevron-right" width="14" stroke-width="3" class="with-animation"></i>
             </button>
         </div>
-
     </div>
 </div>

@@ -20,7 +20,7 @@ html {
 
   font-size: 16px;
   @include media-break-point-down {
-    font-size: calc(14px * 2 / 3);
+    font-size: calc(16px * 2 / 3);
   }
 }
 
@@ -84,6 +84,6 @@ h5 {
   letter-spacing: 0.01rem;
   line-height: $line-height;
   @include media-break-point-down {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 }

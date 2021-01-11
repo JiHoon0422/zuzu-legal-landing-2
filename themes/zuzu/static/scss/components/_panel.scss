@@ -1,3 +1,30 @@
 .panel {
-    padding: $baseUnit;
+    &-large {
+        padding: $baseUnit;
+    }
+    &-medium {
+        @include down-sm-flex-col;
+        padding: $baseUnit * 2;
+        background-color: lighten($hr, 7);
+        border-radius: $baseUnit * 0.75;
+        &-text-wrapper {
+            margin-left: $baseUnit * 2;
+        }
+        &-title {
+            flex-basis: 1;
+            margin-bottom: $baseUnit * 2;
+            @include heading5(1, $bold);
+            color: $subtitleText;
+        }
+        &-subtitle {
+            flex-basis: 1;
+            @include body-text(1.75, $medium);
+            color: $bodyText;
+        }
+        &-image {
+            @include media-break-point-down {
+                display: none;
+            }
+        }
+    }
 }

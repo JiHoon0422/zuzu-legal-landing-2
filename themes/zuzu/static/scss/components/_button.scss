@@ -19,7 +19,7 @@
   &:hover {
     & > svg {
       transition: all $default-easing $default-duration;
-      transform: translateX(3px);
+      transform: translateX(8px);
     }
   }
 
@@ -45,7 +45,7 @@
   }
   &-medium {
     padding: $baseUnit * 1 $baseUnit * 1.5;
-    @include heading5(1, $bold);
+    @include body-text(1, $bold);
   }
   &-small {
     padding: $baseUnit * 0.5 $baseUnit;
