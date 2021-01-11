@@ -1,0 +1,77 @@
+section {
+    position: relative;
+    z-index: 1;
+    padding: $baseUnit * 10 $baseUnit * 4;
+    @include media-break-point-down {
+        padding: $baseUnit * 6 $baseUnit * 3;
+    }
+    .main {
+        &-title {
+            margin-bottom: $baseUnit;
+            margin-right: $baseUnit * 0.5;
+            margin-left: $baseUnit * 0.5;
+            @include heading1(1.4, $black);
+            color: $subtitleText;
+            &-wrapper {
+                @include down-sm-flex-col;
+            }
+        }
+        &-subtitle {
+            margin-bottom: $baseUnit * 2;
+            @include heading4(1.75, $medium);
+            color: $bodyText;
+        }
+        &-image {
+            margin-top: $baseUnit * 3;
+        }
+    }
+
+    .section {
+        &-title {
+            @include heading2(1.75, $bold);
+            color: $subtitleText;
+            text-align: center;
+            &-wrapper {
+                @include down-sm-flex-col;
+            }
+        }
+        &-subtitle {
+            @include heading4(1.75, $medium);
+            color: $bodyText;
+            text-align: center;
+        }
+        &-description {
+            @include heading5(2, $medium);
+            color: $bodyText;
+        }
+        &-anchor-image {
+            position: absolute;
+            z-index: -1;
+            width: 15rem;
+            right: 0;
+            @include media-break-point-down {
+                bottom: 0;
+            }
+        }
+    }
+
+    .feature {
+        &-item {
+            padding: $baseUnit * 4 $baseUnit * 2;
+            margin-top: $baseUnit * 4;
+            &-title {
+                @extend .section-subtitle;
+                text-align: left;
+            }
+        }
+        @at-root {
+            .feature-item + .feature-item {
+                margin-top: $baseUnit * 8;
+            }
+        }
+    }
+
+    &.background-light {
+        background-color: #f5efe0;
+    }
+}

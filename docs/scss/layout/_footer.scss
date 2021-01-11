@@ -1,0 +1,60 @@
+footer {
+  width: 100%;
+  background-color: lighten($hr, 3);
+
+  .footer-inner {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: $baseUnit * 5 $baseUnit * 3;
+  }
+
+  .row + .row {
+    margin-top: $baseUnit * 2;
+  }
+
+  .footer-group {
+    .footer-group-title,
+    .footer-group-list {
+      a,
+      p {
+        font-size: inherit;
+      }
+    }
+    &-title {
+      margin-bottom: $baseUnit * 0.5;
+      color: $bodyText;
+      @include caption(2, $bold);
+    }
+    &-list {
+      padding: $baseUnit * 0.75 0;
+      @include caption(1.75, $medium);
+    }
+    &-company-info {
+      @include caption(2, $medium);
+      padding: 0;
+      color: $disabledText;
+    }
+    &-social {
+      @include flex(row, center, flex-start);
+      &-group-list {
+        @extend .footer-group-list;
+        @include caption(2, $medium);
+        span {
+          @include flex(row, center, center);
+          display: inline-flex;
+          width: $baseUnit * 3;
+          height: $baseUnit * 3;
+          border-radius: 100%;
+          background-color: $bodyText;
+          svg {
+            color: $white;
+          }
+        }
+      }
+      li + li {
+        margin-left: $baseUnit;
+      }
+    }
+  }
+}

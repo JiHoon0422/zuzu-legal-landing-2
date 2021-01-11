@@ -1,0 +1,34 @@
+/** Use 'custom' as a prefix not to override Bootstrap card' */
+
+$card-width: 95%;
+
+.custom-card {
+    width: $card-width;
+    margin-right: (100-$card-width)/2;
+    margin-left: (100-$card-width)/2;
+    padding: $baseUnit * 2;
+    background-color: $white;
+    border: 1px solid $hr;
+    border-radius: $baseUnit * 0.75;
+    
+
+    /** To do: Add a card title */
+
+    &-content {
+        @include word-break(100%);
+        @include heading5(2, $regular);
+        color: $bodyText;
+    }
+    &-meta {
+        margin-top: $baseUnit * 2;
+        @include flex(row, center, flex-start);
+        &-image {
+            margin-right: $baseUnit * 0.5;
+            border-radius: 100%;
+        }
+        &-text {
+            @include body-text(1.75, $regular);
+            color: $subtitleText;
+        }
+    }
+}
