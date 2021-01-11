@@ -5,7 +5,7 @@ title = "주주 리걸"
 theme = "zuzu"
 enableEmoji = true
 enableRobotsTXT = true
-publishDir = "public"
+publishDir = "docs"
 googleAnalytics = " "
 canonifyurls = true
 
