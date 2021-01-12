@@ -24,7 +24,7 @@ footer {
     &-title {
       margin-bottom: $baseUnit * 0.5;
       color: $bodyText;
-      @include caption(2, $bold);
+      @include body-text(2, $bold);
     }
     &-list {
       padding: $baseUnit * 0.75 0;
@@ -33,7 +33,7 @@ footer {
     &-company-info {
       @include caption(2, $medium);
       padding: 0;
-      color: $disabledText;
+      color: $bodyText;
     }
     &-social {
       @include flex(row, center, flex-start);
