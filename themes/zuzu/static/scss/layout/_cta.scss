@@ -8,6 +8,6 @@
     &-caption {
         margin-top: $baseUnit * 2;
         @include caption(1, $medium);
-        color: $disabledText;
+        color: $bodyText;
     }
 }
