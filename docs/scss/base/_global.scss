@@ -14,16 +14,41 @@ html {
   cursor: pointer;
 }
 
-img.fluid-100 {
-  width: 100%;
-  min-width: 320px;
+img {
+  &.fluid {
+    &-100 {
+      width: 100%;
+      min-width: 240px;
+    }
+    &-80 {
+      width: 80%;
+      min-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-50 {
+      width: 50%;
+      min-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.bordered {
+    border-radius: $baseUnit * 0.75;
+  }
 }
 
-img.fluid-80 {
-  width: 80%;
-  min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+.down-sm-width-100 {
+  &.down-sm-width-100 {
+    @include media-break-point-down {
+      width: 100%;
+    }
+  }
+  & + & {
+    @include media-break-point-down {
+      margin-top: $baseUnit * 2;
+    }
+  }
 }
 
 span.highlight {

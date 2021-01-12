@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>주주 리걸 사용법 on 주주 리걸</title>
+    <link>https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/</link>
+    <description>Recent content in 주주 리걸 사용법 on 주주 리걸</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 04 Jan 2021 21:28:20 +0900</lastBuildDate><atom:link href="https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>회사 등록은 어떻게 하나요?</title>
+      <link>https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/company-create/</link>
+      <pubDate>Mon, 04 Jan 2021 21:28:20 +0900</pubDate>
+      
+      <guid>https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/company-create/</guid>
+      <description>회사의 정관과 상법에 따라 문서를 딱 맞게 만드려면 주주 리걸에 회사를 등록 해야해요. 실제로 회사 등록을 어떻게 하는지 한 번 알아볼까요?</description>
+    </item>
+    
+    <item>
+      <title>등기 진행</title>
+      <link>https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/registration-service/</link>
+      <pubDate>Sun, 03 Jan 2021 21:28:20 +0900</pubDate>
+      
+      <guid>https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/registration-service/</guid>
+      <description>법인 등기 어떻게 진행해야 할까요? 등기를 해야하는데 주주총회나 이사회가 필요할까요? 자세히 알려드릴게요! (사실 회사만 등록하면 더 이상 신경쓰실게 없어요. 시스템이 알아서 다 판단해요.)</description>
+    </item>
+    
+  </channel>
+</rss>

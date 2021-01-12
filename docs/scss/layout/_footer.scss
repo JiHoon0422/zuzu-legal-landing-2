@@ -24,15 +24,19 @@ footer {
     &-title {
       margin-bottom: $baseUnit * 0.5;
       color: $bodyText;
-      @include body-text(2, $bold);
+      @include caption(2, $bold);
     }
     &-list {
       padding: $baseUnit * 0.75 0;
-      @include caption(1.75, $medium);
+      @include caption(1.75, $regular);
+      color: $bodyText;
+      a {
+        @extend .no-decoration;
+      }
     }
     &-company-info {
-      @include caption(2, $medium);
-      padding: 0;
+      padding: $baseUnit * 0.75 0;
+      @include caption(1.25, $regular);
       color: $bodyText;
     }
     &-social {
@@ -43,10 +47,10 @@ footer {
         span {
           @include flex(row, center, center);
           display: inline-flex;
-          width: $baseUnit * 3;
-          height: $baseUnit * 3;
+          width: $baseUnit * 2.5;
+          height: $baseUnit * 2.5;
           border-radius: 100%;
-          background-color: $bodyText;
+          background-color: $disabledText;
           svg {
             color: $white;
           }

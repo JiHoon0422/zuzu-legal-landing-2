@@ -9,6 +9,29 @@ publishDir = "docs"
 googleAnalytics = ""
 canonifyurls = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+      xhtml = true
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
 [params]
 author = "주주 리걸"
 description = "주주총회·이사회 진행부터, 등기까지!"
@@ -112,7 +135,7 @@ weight = 5
 [[menu.main]]
 identifier = "resource-guide"
 name = "주주 리걸 사용법"
-url = "/guide/guide/"
+url = "/resource/guide/"
 title = "주주 리걸 사용법"
 parent = "resource"
 weight = 1
@@ -120,23 +143,23 @@ weight = 1
 [[menu.main]]
 identifier = "resource-team"
 name = "주주 팀 소개"
-url = "/guide/team/"
+url = "/resource/team/"
 title = "주주 팀 소개"
 parent = "resource"
 weight = 2
 
 [[menu.main]]
 identifier = "resource-recruit"
-name = "리크루팅"
-url = "/guide/recruit/"
-title = "리크루팅"
+name = "채용"
+url = "https://www.notion.so/f3710bea015740f8ad76941a30214635"
+title = "채용"
 parent = "resource"
 weight = 3
 
 [[menu.main]]
 identifier = "resource-update"
 name = "업데이트 소식"
-url = "/guide/recruit/"
+url = "/resource/update/"
 title = "업데이트 소식"
 parent = "resource"
 weight = 4

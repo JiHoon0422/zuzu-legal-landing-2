@@ -1,5 +1,5 @@
 ---
-layout: single_custom
+layout: custom-cta-only
 title: '자본금 변경 안건'
 subtitle: '봄날의 인간의 어디 아름답고 끝까지 심장의 것이다.보라, 위하여서. 같이, 있으며, 기관과 것이다. 광야에서 새가 봄날의 있으며, 할지니, 천하를 우리의 황금시대다.'
 image: '/assets/images/pack/LovingDoodle.svg'

@@ -8,10 +8,10 @@ section {
     .main {
         &-title {
             margin-bottom: $baseUnit;
-            margin-right: $baseUnit * 0.5;
-            margin-left: $baseUnit * 0.5;
             @include heading1(1.4, $black);
             color: $subtitleText;
+            word-wrap: break-word;
+            word-break: break-all;
             &-wrapper {
                 @include down-sm-flex-col;
             }
