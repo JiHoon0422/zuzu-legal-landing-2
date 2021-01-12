@@ -1,4 +1,7 @@
 // LAYOUT LEVEL
+html {
+  overflow-x: hidden;
+}
 .row + .row {
   margin-top: $baseUnit * 4;
 }
