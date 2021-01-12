@@ -1,15 +1,16 @@
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+{{ $title := print .Site.Title " | " .Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+<title>{{ $title }}</title>
 <meta
   name="description"
   content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}"
 />
-
 {{- hugo.Generator -}}
-<meta htt-equiv="content-language" content="ko" />
+<meta http-equiv="content-language" content="ko" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+<!-- ! Set up open graph -->
 <!-- * Google Verification -->
 {{- if .Site.Params.googleSiteVerify }}
 <meta
