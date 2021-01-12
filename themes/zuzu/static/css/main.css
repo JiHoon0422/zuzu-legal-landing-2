@@ -159,6 +159,10 @@ h5 {
 /**
  * * TYPOGRAPHY MIXIN STARTS;
  */
+html {
+  overflow-x: hidden;
+}
+
 .row + .row {
   margin-top: 3rem;
 }
@@ -416,7 +420,7 @@ section.background-light {
 .panel-medium-title {
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02rem;
