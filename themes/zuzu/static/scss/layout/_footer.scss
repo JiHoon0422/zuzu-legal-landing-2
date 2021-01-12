@@ -23,8 +23,8 @@ footer {
     }
     &-title {
       margin-bottom: $baseUnit * 0.5;
-      color: $bodyText;
-      @include caption(2, $bold);
+      color: $subtitleText;
+      @include caption(2, $medium);
     }
     &-list {
       padding: $baseUnit * 0.75 0;
