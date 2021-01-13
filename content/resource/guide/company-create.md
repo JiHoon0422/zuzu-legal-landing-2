@@ -69,5 +69,5 @@ __A: 법인 등기에 필요한 문서들이 회사의 정관과 주주명부에
 
 1.먼저 회사 목록 페이지로 이동해주세요. [클릭해서 이동](https://legal-app.zuzu.network/company)
 2.가장 왼쪽에 있는 [+] 버튼을 클릭하세요.
-![회사등록](/assets/images/guide/company-create.webp =320x)
+{{< figure src="/assets/images/guide/company-create.webp" alt="회사등록" width="100%">}}
 3.입력창에 맞게 내용을 입력하고 파일을 업로드하세요.
