@@ -1,0 +1,31 @@
+.post {
+    @include down-sm-flex-col;
+    @include media-break-point-down {
+        align-items: start;
+    }
+    overflow: hidden;
+    &-text-wrapper {
+        margin-left: $baseUnit * 2;
+    }
+    &-title {
+        margin-bottom: $baseUnit;
+        @include heading5(1.75, $bold);
+        color: $bodyText;
+    }
+    &-content {
+        @include caption(1.75, $medium);
+        @include media-break-point-down {
+            max-width: 80%;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        color: $bodyText;
+    }
+    &-image {
+        @extend .fluid-50;
+        @include media-break-point-down {
+            width: 160px;
+            min-width: 160px;
+        }
+    }
+}
