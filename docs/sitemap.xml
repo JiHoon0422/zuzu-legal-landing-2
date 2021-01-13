@@ -101,14 +101,25 @@
   </url>
   
   <url>
-    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/resource/guide/registration-service/</loc>
-    <lastmod>2021-01-03T21:28:20+09:00</lastmod>
+    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/categories/</loc>
+    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/term-and-privacy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/term-and-privacy/privacypolicy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/term-and-privacy/term/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

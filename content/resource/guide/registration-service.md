@@ -12,5 +12,5 @@ featureImage: '/assets/images/guide/company-create.webp'
 readingTime: "3"
 author: '프로덕트 디자이너 Jihoon'
 authorImage : '/assets/images/'
-draft: false
+draft: true
 ---
