@@ -106,7 +106,7 @@ strong {
   }
 }
 @mixin caption($line-height, $font-weight: $bold) {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: $font-weight;
   letter-spacing: 0.01rem;
   line-height: $line-height;
