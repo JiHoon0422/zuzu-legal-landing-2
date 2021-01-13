@@ -1,0 +1,7 @@
+a.no-decoration {
+    color: $bodyText;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

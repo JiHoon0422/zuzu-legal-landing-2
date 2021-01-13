@@ -1,0 +1,35 @@
+/**
+* Override default bootstrap dropdown menu style
+*/
+
+.custom-dropdown-menu {
+    background-color: white;
+    z-index: 10;
+    // Bootstrap default dropdown menu already has position:relative
+    padding: $baseUnit * 1.5 0;
+    border-radius: $baseUnit * 0.75;
+    @include box-shadow-e-1;
+    border: none;
+    @include media-break-point-down {
+        box-shadow: none;
+    }
+
+    .custom-dropdown-item {
+        @include caption(1, $regular);
+        @include media-break-point-down {
+            @include heading4(2, $medium);
+        }
+        padding: $baseUnit $baseUnit * 3;
+        color: $bodyText;
+        &:active {
+            background-color: transparent;
+            color: $primaryLight;
+            font-weight: $bold;
+        }
+    }
+
+    .active {
+        background-color: transparent;
+        @include body-text(1, $medium);
+    }
+}

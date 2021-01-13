@@ -1,0 +1,107 @@
+// LAYOUT LEVEL
+html,
+body {
+  overflow-x: visible;
+}
+.row + .row {
+  margin-top: $baseUnit * 4;
+}
+.container + .container {
+  margin-top: $baseUnit * 8;
+}
+.row > .col-md-6:nth-child(n + 3) {
+  margin-top: $baseUnit * 2;
+}
+
+// TAG AND COMPONENT LEVEL
+blockquote {
+  background-color: lighten($hr, 3);
+  padding: $baseUnit;
+  border-radius: $baseUnit * 0.25;
+}
+*[onclick] {
+  cursor: pointer;
+}
+.bordered {
+  border: 1px solid $hr;
+  border-radius: $baseUnit * 0.75;
+}
+.text-gradient {
+  background: linear-gradient(90deg, #36b06a 0%, #43a5ba 84.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.flex-gap-16 {
+  & > * + * {
+    margin-left: $baseUnit * 2;
+  }
+}
+
+img {
+  &.fluid {
+    &-100 {
+      width: 100%;
+      min-width: 240px;
+    }
+    &-80 {
+      width: 80%;
+      min-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-50 {
+      width: 50%;
+      min-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.bordered {
+    border-radius: $baseUnit * 0.75;
+  }
+}
+
+.down-sm-width-100 {
+  &.down-sm-width-100 {
+    @include media-break-point-down {
+      width: 100%;
+    }
+  }
+  & + & {
+    @include media-break-point-down {
+      margin-top: $baseUnit * 2;
+    }
+  }
+}
+
+span.highlight {
+  font-weight: bolder;
+  background: linear-gradient(
+      104deg,
+      rgba(130, 255, 173, 0) 0.9%,
+      rgba(130, 255, 173, 1.25) 2.4%,
+      rgba(130, 255, 173, 0.5) 5.8%,
+      rgba(130, 255, 173, 0.1) 93%,
+      rgba(130, 255, 173, 0.7) 96%,
+      rgba(130, 255, 1732, 0) 98%
+    ),
+    linear-gradient(183deg, rgba(130, 255, 173, 0) 0%, rgba(130, 255, 173, 0.3) 7.9%, rgba(130, 255, 173, 0) 15%);
+  padding: 0.6em 13.7px;
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  border-radius: 7.5px;
+  text-shadow: -12px 12px 9.8px rgba(130, 255, 173, 0.7), 21px -18.1px 7.3px rgba(255, 255, 255, 1),
+    -18.1px -27.3px 30px rgba(255, 255, 255, 1);
+}
+
+.flip-horizontal {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+// MEDIAQUERY
+@media screen and (max-width: 768px) {
+  *[class^="col-md"] + *[class^="col-md"] {
+    margin-top: $baseUnit * 3;
+  }
+}

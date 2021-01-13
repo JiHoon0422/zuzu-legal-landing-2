@@ -1,0 +1,116 @@
+/**
+ * * TYPE SCALE
+ * MAJOR-THIRD(* 1.25) MODULAR TYPE SCALE
+ * https://type-scale.com/
+*/
+
+html {
+  font-family: "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  @include media-break-point-down {
+    font-size: calc(16px * 2 / 3);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.75;
+  color: $bodyText;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  font-weight: $bold;
+  letter-spacing: -0.05rem;
+  color: $subtitleText;
+}
+h2 {
+  font-size: 2.441rem;
+  font-weight: $bold;
+  letter-spacing: -0.04rem;
+}
+h3 {
+  font-size: 1.953rem;
+  font-weight: $bold;
+  letter-spacing: -0.04rem;
+}
+h4 {
+  font-size: 1.563rem;
+  font-weight: $medium;
+  letter-spacing: -0.03rem;
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: $medium;
+  letter-spacing: -0.03rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: $regular;
+  letter-spacing: -0.02rem;
+  @include media-break-point-down {
+    font-size: 1.25rem;
+  }
+}
+b,
+strong {
+  font-weight: $bold;
+}
+
+@mixin heading1($line-height, $font-weight: $black) {
+  margin-top: 0;
+  font-size: 3.052rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.04rem;
+  color: $subtitleText;
+  line-height: $line-height;
+}
+
+@mixin heading2($line-height, $font-weight: $bold) {
+  font-size: 2.441rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.03rem;
+  line-height: $line-height;
+}
+@mixin heading3($line-height, $font-weight: $bold) {
+  font-size: 1.953rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.02rem;
+  line-height: $line-height;
+}
+@mixin heading4($line-height, $font-weight: $medium) {
+  font-size: 1.563rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.02rem;
+  line-height: $line-height;
+}
+@mixin heading5($line-height, $font-weight: $medium) {
+  font-size: 1.25rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.02rem;
+  line-height: $line-height;
+}
+@mixin body-text($line-height, $font-weight: $bold) {
+  font-size: 1rem;
+  font-weight: $font-weight;
+  letter-spacing: -0.01rem;
+  line-height: $line-height;
+  @include media-break-point-down {
+    font-size: 1.25rem;
+  }
+}
+@mixin caption($line-height, $font-weight: $bold) {
+  font-size: 0.8rem;
+  font-weight: $font-weight;
+  letter-spacing: 0.01rem;
+  line-height: $line-height;
+  @include media-break-point-down {
+    font-size: 1.25rem;
+  }
+}
