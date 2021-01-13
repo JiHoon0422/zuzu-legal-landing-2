@@ -24,11 +24,12 @@ footer {
     &-title {
       margin-bottom: $baseUnit * 0.5;
       color: $subtitleText;
-      @include caption(2, $medium);
+      @include body-text(2, $medium);
     }
     &-list {
       padding: $baseUnit * 0.75 0;
-      @include caption(1.75, $regular);
+      @include body-text(1.75, $regular);
+
       color: $bodyText;
       a {
         @extend .no-decoration;
@@ -36,14 +37,15 @@ footer {
     }
     &-company-info {
       padding: $baseUnit * 0.75 0;
-      @include caption(1.25, $regular);
+      @include body-text(1.25, $regular);
+
       color: $bodyText;
     }
     &-social {
       @include flex(row, center, flex-start);
       &-group-list {
         @extend .footer-group-list;
-        @include caption(2, $medium);
+        @include body-text(2, $medium);
         span {
           @include flex(row, center, center);
           display: inline-flex;
