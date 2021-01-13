@@ -1,13 +1,8 @@
 // LAYOUT LEVEL
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: visible;
 }
-
-body {
-  position: relative;
-}
-
 .row + .row {
   margin-top: $baseUnit * 4;
 }
