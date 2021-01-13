@@ -11,8 +11,10 @@
                             alt="sparkle" />
                     </div>
                     <h2 class="main-subtitle text-center">아까운 시간 내서 법인 등기에 필요한 문서들 찾아해매지 마세요. <br> 회사 등록 이후에는 전부 주주 리걸이 다 해드릴게요.
-                    <a href="/resource/guide/company-create/" class="no-decoration"><span class="highlight">회사 등록 더 알아보기 <i data-feather="chevron-right" width="18" stroke-width="3"></i></span></a>
+                    <a href="/resource/guide/company-create/" class="no-decoration" style="text-decoration: underline;"><b>회사 등록 더 알아보기</b> <i data-feather="chevron-right" width="18" stroke-width="3"></i></span></a>
                     </h2>
+
+                    <div class="row">
                     <div class="d-flex align-items-center justify-content-center">
                         <button class="button button-large button-secondary" onclick="window.open('https://legal-app.zuzu.network/login')">
                             <span style="line-height:2.4rem">데모 체험하기</span>
@@ -26,9 +28,14 @@
                         </button>
                     </div>
                 </div>
+                    
+                        {{- partial "section/main/feature.html" . -}}
+                    
+                </div>
+            </div>           
+            <div class="row">
+                {{- partial "section/voucher.html" . -}}
             </div>
-            {{- partial "section/main/feature.html" . -}}
-            {{- partial "section/voucher.html" . -}}
         </div>
     </section>
     <!-- INCLUDE PARTAIL STARTS -->

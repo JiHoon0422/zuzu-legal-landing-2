@@ -23,8 +23,12 @@
     }
   }
 
-  & + & {
-    margin-left: $baseUnit * 0.5;
+  &-large + &-large {
+    margin-left: $baseUnit * 2;
+  }
+
+  &-medium + &-medium {
+    margin-left: $baseUnit;
   }
 
   /**
@@ -68,10 +72,10 @@
   */
   &-primary {
     color: $white;
-    background-color: $primaryLight;
-    &:hover {
-      background: $primaryHover;
-    }
+    background: $primaryGradient;
+    // &:hover {
+    //   background: $primaryHover;
+    // }
   }
   &-secondary {
     color: $bodyText;

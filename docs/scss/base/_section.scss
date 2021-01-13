@@ -20,6 +20,11 @@ section {
             margin-bottom: $baseUnit * 2;
             @include heading4(1.75, $medium);
             color: $bodyText;
+            @include media-break-point-down {
+                br {
+                    display: none;
+                }
+            }
         }
         &-image {
             margin-top: $baseUnit * 3;
@@ -29,16 +34,21 @@ section {
     .section {
         &-title {
             @include heading2(1.75, $bold);
-            color: $subtitleText;
             text-align: center;
+            color: $subtitleText;
             &-wrapper {
                 @include down-sm-flex-col;
+            }
+            @include media-break-point-down {
+                br {
+                    display: none;
+                }
             }
         }
         &-subtitle {
             @include heading4(1.75, $medium);
-            color: $bodyText;
             text-align: center;
+            color: $bodyText;
         }
         &-description {
             @include heading5(2, $medium);

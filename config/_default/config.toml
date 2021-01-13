@@ -81,27 +81,27 @@ parent = "agendas"
 title = "스톡옵션"
 weight = 4
 
-[[menu.main]]
-identifier = "documents"
-name = "생성 문서"
-title = "생성 문서"
-weight = 2
+# [[menu.main]]
+# identifier = "documents"
+# name = "생성 문서"
+# title = "생성 문서"
+# weight = 2
 
-[[menu.main]]
-identifier = "generated-document"
-name = "회사 등록 시 자동 생성 문서"
-url = "/documents/generated-document/"
-parent = "documents"
-title = "회사 등록 시 자동 생성 문서"
-weight = 1
+# [[menu.main]]
+# identifier = "generated-document"
+# name = "회사 등록 시 자동 생성 문서"
+# url = "/documents/generated-document/"
+# parent = "documents"
+# title = "회사 등록 시 자동 생성 문서"
+# weight = 1
 
-[[menu.main]]
-identifier = "template-document"
-name = "기본 문서 템플릿 다운로드"
-url = "/documents/template-document/"
-parent = "documents"
-title = "기본 문서 템플릿"
-weight = 2
+# [[menu.main]]
+# identifier = "template-document"
+# name = "기본 문서 템플릿 다운로드"
+# url = "/documents/template-document/"
+# parent = "documents"
+# title = "기본 문서 템플릿"
+# weight = 2
 
 [[menu.main]]
 identifier = "resource"

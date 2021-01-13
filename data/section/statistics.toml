@@ -1,15 +1,15 @@
 [statistics1]
 name = "의사록 생성"
-count = "17123"
+count = "3343"
 
 [statistics2]
 name = "주식청약서 생성"
-count = "1878"
+count = "918"
 
 [statistics3]
 name = "등기신청서 생성"
-count = "6178"
+count = "2341"
 
 [statistics4]
 name = "스톡옵션 계약서 생성"
-count = "1382"
+count = "438"
