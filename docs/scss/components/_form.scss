@@ -1,0 +1,14 @@
+.form {
+    footer & {
+        &-title {
+            @include caption(1.75, $medium);
+            margin-bottom: $baseUnit * 0.75;
+            color: $subtitleText;
+        }
+        &-subtitle {
+            @include caption(1.75, $regular);
+            margin-bottom: $baseUnit;
+            color: $bodyText;
+        }
+    }
+}

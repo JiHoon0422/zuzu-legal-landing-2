@@ -1,0 +1,15 @@
+.input {
+    &-subscription {
+        padding: $baseUnit;
+        width: $baseUnit * 30;
+        min-width: 320px;
+        border-radius: $baseUnit * 5;
+        border: none;
+        &::placeholder {
+            @include caption(1, $medium);
+        }
+        @include media-break-point-down {
+            padding: $baseUnit * 2;
+        }
+    }
+}
