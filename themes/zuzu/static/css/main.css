@@ -766,6 +766,34 @@ nav.main-nav .active .nav-link {
 /** 
     * * OVERRIDE THE DEFAULT BOOTSTRAP IN THE MOBILE AND TABLE VIEWPORT 
 */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .navbar-collapse.collapsing {
+    left: -75%;
+    -webkit-transition: left 0s ease-out;
+    transition: left 0s ease-out;
+  }
+  .navbar-collapse.collapsing .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 300ms ease-out;
+    transition: left 300ms ease-out;
+  }
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    -webkit-transition: left 500ms ease-out;
+    transition: left 500ms ease-out;
+  }
+}
+
 /** Use 'custom' as a prefix not to override Bootstrap card' */
 .custom-card-wrapper .col-md-3:nth-child(n + 5) {
   margin-top: 1.5rem;
