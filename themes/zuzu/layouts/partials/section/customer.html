@@ -1,4 +1,4 @@
-<section id="customer" class="target-section section background-light">
+<section id="customer" class="customer section background-light">
     <div class="container">
         <div class="row">
             <img src="/assets/images/pack/GroovySittingDoodle.svg" class="section-anchor-image"
@@ -6,19 +6,19 @@
                 <h2 class="section-title text-center">
                     6개월 만에 <span data-countup class="highlight">1447</span>명이 넘는 대표님이 가입하셨어요
                 </h2>
-                <h3 class="section-subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<h3>
+                <h3 class="section-subtitle text-center">직접 전달해주신 생생한 리뷰를 들어보세요<h3>
         </div>
 
-        <div class="row">
+        <div class="row custom-card-wrapper">
             {{ range $.Site.Data.section.customer}}
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay={{ .delay}} data-aos-anchor="#customer">
-                    <div class="custom-card">
+                    <div class="custom-card new">
                         <div class="custom-card-content">
                             <div>
                                 {{ .review}}
                             </div>
                         </div>
-                        <div class="custom-card-meta">
+                        <!-- <div class="custom-card-meta">
                             <img class="custom-card-meta-image" src="https://via.placeholder.com/48" />
                             <div class="custom-card-meta-text">
                                 <div>
@@ -28,7 +28,7 @@
                                     {{ .companyAndRole}}
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             {{end}}

@@ -16,8 +16,7 @@
         th,
         td {
             padding: $baseUnit $baseUnit * 2;
-            vertical-align: middle;
-            @include body-text(2, $medium);
+            @include body-text(1.75, $medium);
             color: $bodyText;
             word-wrap: break-word;
             vertical-align: middle;

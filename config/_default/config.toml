@@ -104,28 +104,6 @@ title = "기본 문서 템플릿"
 weight = 2
 
 [[menu.main]]
-identifier = "voucher"
-name = "비대면 바우처"
-title = "비대면 바우처"
-weight = 4
-
-[[menu.main]]
-identifier = "voucher-coupon"
-name = "비대면 바우처 쿠폰"
-url = "/voucher/coupon/"
-parent = "voucher"
-title = "비대면 바우처 쿠폰"
-weight = 1
-
-[[menu.main]]
-identifier = "voucher-guide"
-name = "비대면 바우처 사용 방법"
-url = "/voucher/voucher-guide/"
-parent = "voucher"
-title = "비대면 바우처 사용 방법"
-weight = 2
-
-[[menu.main]]
 identifier = "resource"
 name = "리소스"
 url = "/resource"

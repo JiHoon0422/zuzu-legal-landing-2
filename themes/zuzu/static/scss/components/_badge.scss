@@ -8,7 +8,7 @@
     }
     @include flex(row, center, flex-start);
     display: inline-flex;
-    @include caption(1, $bold);
+    @include caption(1, $medium);
     &-primary {
         background-color: $primaryLight;
     }

@@ -57,7 +57,7 @@ footer {
         }
       }
       li + li {
-        margin-left: $baseUnit;
+        margin-left: $baseUnit * 0.5;
       }
     }
   }

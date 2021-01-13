@@ -55,6 +55,12 @@
   &-small {
     padding: $baseUnit * 0.5 $baseUnit;
     @include caption(1, $medium);
+    &:hover {
+      & > svg {
+        transition: all $default-easing $default-duration;
+        transform: translateX(2px);
+      }
+    }
   }
 
   /**
@@ -64,7 +70,7 @@
     color: $white;
     background-color: $primaryLight;
     &:hover {
-      background-color: $primaryHover;
+      background: $primaryHover;
     }
   }
   &-secondary {

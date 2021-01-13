@@ -13,7 +13,7 @@
         &-title {
             flex-basis: 1;
             margin-bottom: $baseUnit;
-            @include heading5(1, $bold);
+            @include heading5(1, $medium);
             color: $subtitleText;
         }
         &-subtitle {

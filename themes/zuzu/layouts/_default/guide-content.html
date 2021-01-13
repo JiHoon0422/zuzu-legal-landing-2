@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="jumbotron text-center" style="color: white; background-color:#f79862; padding:8rem 0rem;">
+<div class="jumbotron text-center" style="background-color:#f7f7f7; padding:8rem 0rem;">
     <h1 class="text-reset mb-2">{{.Title}}</h1>
     <span>
-        <span class="text-reset" style="margin-right:1rem;">작성자: {{.Params.author}}</span>
-        <span class="text-reset">읽기 시간: <span data-countUp >{{.Params.readingTime}}</span>분</span>
+        <span style="margin-right:1rem;">작성자: {{.Params.author}}</span>
+        <span >읽기 시간: <span data-countUp >{{.Params.readingTime}}</span>분</span>
     </span>
 </div>
 <section>

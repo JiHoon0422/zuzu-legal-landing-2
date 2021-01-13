@@ -1,0 +1,24 @@
+[step]
+
+[[voucher]]
+title = "1. 거래상담 요청 클릭!"
+content = "비대면 바우처 구매 페이지에서 '거래상담 요청' 버튼을 눌러주세요."
+image = "/assets/images/voucher/voucher-step-1.webp"
+link = "https://www.k-voucher.kr/detail.html?no=3378"
+
+[[voucher]]
+title = "2. 주주 리걸 스태프 거래수락"
+content = "스태프가 거래상담 요청을 확인하고 거래를 수락해드려요."
+
+[[voucher]]
+title = "3. 결제요청"
+content = "거래 수락이 완료되면 결제가 가능해요! 결제 요청을 드릴테니 제로페이 혹은 신한바우처카드로 결제해주세요."
+
+[[voucher]]
+title = "4. 주주 리걸에 회사 등록 "
+content = "결제가 완료되었다면 주주 리걸에 회원가입 후 회사를 등록해주세요!"
+
+[[voucher]]
+title = "5. 충전 크레딧 확인 "
+content = "회사 등록이 완료되면 충전된 크레딧은 '주주 크레딧 페이지'에서 확인 가능해요."
+image = "/assets/images/voucher/credit-check.webp"

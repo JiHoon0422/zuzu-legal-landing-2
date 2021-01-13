@@ -2,33 +2,57 @@
 
 $card-width: 95%;
 
-.custom-card {
-    width: $card-width;
-    margin-right: (100-$card-width)/2;
-    margin-left: (100-$card-width)/2;
-    padding: $baseUnit * 2;
-    background-color: $white;
-    border: 1px solid $hr;
-    border-radius: $baseUnit * 0.75;
-    
-
-    /** To do: Add a card title */
-
-    &-content {
-        @include word-break(100%);
-        @include heading5(2, $regular);
-        color: $bodyText;
-    }
-    &-meta {
+.custom-card-wrapper {
+    .col-md-3:nth-child(n + 5) {
         margin-top: $baseUnit * 2;
-        @include flex(row, center, flex-start);
-        &-image {
-            margin-right: $baseUnit * 0.5;
-            border-radius: 100%;
+    }
+    .custom-card {
+        width: $card-width;
+        margin-right: (100-$card-width)/2;
+        margin-left: (100-$card-width)/2;
+        padding: $baseUnit * 2;
+        background-color: $white;
+        border: 1px solid $hr;
+        border-radius: $baseUnit * 0.75;
+
+        /** To do: Add a card title */
+
+        &-content {
+            @include word-break(100%);
+            @include body-text(2, $regular);
+            color: $bodyText;
         }
-        &-text {
-            @include body-text(1.75, $regular);
-            color: $subtitleText;
+        &-meta {
+            margin-top: $baseUnit * 2;
+            @include flex(row, center, flex-start);
+            &-image {
+                margin-right: $baseUnit * 0.5;
+                border-radius: 100%;
+            }
+            &-text {
+                @include body-text(1.75, $regular);
+                color: $subtitleText;
+            }
+        }
+
+        &.new {
+            &::after {
+                content: "N";
+                position: absolute;
+                z-index: 1;
+                top: -12px;
+                left: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 100%;
+                background: $primaryGradient;
+                color: $white;
+                font-size: 12px;
+                font-weight: 500;
+            }
         }
     }
 }
