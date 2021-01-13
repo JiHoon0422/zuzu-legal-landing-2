@@ -2,118 +2,6 @@
 * ! THIS FILE SHOULD ONLY CONTAIN IMPORTS!
 */
 @use "sass:color";
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-canvas,
-embed,
-footer,
-header,
-nav,
-section,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-      -ms-text-size-adjust: none;
-          text-size-adjust: none;
-}
-
-footer,
-header,
-nav,
-section,
-main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
 /** TO DO: ADD GRADIENT BACKGROUND SECONDARY (WE ALREADY USE IN BANNER.SCSS) */
 /** TO DO: CHANGE BOX-SHADOW TO FUNCTION */
 @media screen and (max-width: 600px) {
@@ -132,7 +20,6 @@ input {
 */
 html {
   font-family: "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /** JUST IN CASE THAT YOU'D LIKE TO ACTIVE A SYSTEM FONT ONLY  */
   font-size: 16px;
 }
 
@@ -156,44 +43,49 @@ h1 {
   margin-top: 0;
   font-size: 3.052rem;
   font-weight: 700;
-  letter-spacing: -0.04rem;
+  letter-spacing: -0.05rem;
   color: #2e2e31;
 }
 
 h2 {
   font-size: 2.441rem;
   font-weight: 700;
-  letter-spacing: -0.03rem;
+  letter-spacing: -0.04rem;
 }
 
 h3 {
   font-size: 1.953rem;
   font-weight: 700;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.04rem;
 }
 
 h4 {
   font-size: 1.563rem;
   font-weight: 500;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.03rem;
 }
 
 h5 {
   font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.03rem;
 }
 
 p {
   font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: -0.01rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
 }
 
 @media screen and (max-width: 600px) {
   p {
     font-size: 1.25rem;
   }
+}
+
+b,
+strong {
+  font-weight: 700;
 }
 
 html {
@@ -206,6 +98,12 @@ html {
 
 .container + .container {
   margin-top: 6rem;
+}
+
+blockquote {
+  background-color: #eeeeee;
+  padding: 0.75rem;
+  border-radius: 0.1875rem;
 }
 
 *[onclick] {
@@ -837,8 +735,8 @@ nav.main-nav .active .nav-link {
   color: #4aa570;
 }
 
-/**
-    * * OVERRIDE THE DEFAULT BOOTSTRAP IN THE MOBILE AND TABLE VIEWPORT
+/** 
+    * * OVERRIDE THE DEFAULT BOOTSTRAP IN THE MOBILE AND TABLE VIEWPORT 
 */
 @media (max-width: 992px) {
   .navbar-collapse {
@@ -1043,7 +941,7 @@ nav.main-nav .active .nav-link {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.01rem;
   line-height: 1;
 }
@@ -1380,28 +1278,42 @@ nav.main-nav .active .nav-link {
 
 .table thead th,
 .table thead td {
+  padding: 0.75rem 1.5rem;
   background-color: #ebebeb;
-  padding: 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.01rem;
   line-height: 1.75;
   color: #2e2e31;
   word-wrap: break-word;
   vertical-align: middle;
 }
 
+@media screen and (max-width: 600px) {
+  .table thead th,
+  .table thead td {
+    font-size: 1.25rem;
+  }
+}
+
 .table tbody th,
 .table tbody td {
   padding: 0.75rem 1.5rem;
   vertical-align: middle;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.01rem;
   line-height: 2;
   color: #535353;
   word-wrap: break-word;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .table tbody th,
+  .table tbody td {
+    font-size: 1.25rem;
+  }
 }
 
 .table tbody th {
@@ -1627,9 +1539,9 @@ footer .footer-group .footer-group-social-group-list p {
 
 footer .footer-group-title {
   margin-bottom: 0.375rem;
-  color: #535353;
+  color: #2e2e31;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.01rem;
   line-height: 2;
 }

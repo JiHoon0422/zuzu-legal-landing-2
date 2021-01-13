@@ -3,9 +3,9 @@
     thead {
         th,
         td {
+            padding: $baseUnit $baseUnit * 2;
             background-color: lighten($hr, 2);
-            padding: $baseUnit;
-            @include heading5(1.75, $medium);
+            @include body-text(1.75, $medium);
             color: $subtitleText;
             word-wrap: break-word;
             vertical-align: middle;
@@ -17,7 +17,7 @@
         td {
             padding: $baseUnit $baseUnit * 2;
             vertical-align: middle;
-            @include heading5(2, $medium);
+            @include body-text(2, $medium);
             color: $bodyText;
             word-wrap: break-word;
             vertical-align: middle;

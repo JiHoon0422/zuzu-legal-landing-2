@@ -4,7 +4,7 @@
     padding: $baseUnit $baseUnit * 3;
     &-title {
         @include flex(row, center, space-between);
-        @include caption(1, $medium);
+        @include caption(1, $regular);
         @at-root {
             .banner-summary {
                 margin-left: $baseUnit;

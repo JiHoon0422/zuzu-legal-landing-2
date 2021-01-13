@@ -9,7 +9,12 @@ html {
   margin-top: $baseUnit * 8;
 }
 
-// COMPONENT LEVEL
+// TAG LEVEL
+blockquote {
+  background-color: lighten($hr, 3);
+  padding: $baseUnit;
+  border-radius: $baseUnit * 0.25;
+}
 *[onclick] {
   cursor: pointer;
 }
