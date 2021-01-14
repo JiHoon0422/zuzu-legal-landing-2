@@ -588,21 +588,21 @@ rel="stylesheet"
     
     $(".container, .col-md-12, .col-md-10").fitVids();
   });
+</script>
 
-function isIE() {
-  const ua = window.navigator.userAgent; 
-  const msie = ua.indexOf('MSIE '); 
-  const trident = ua.indexOf('Trident/'); 
-
-  return (msie > 0 || trident > 0);
-}
-
-
-function ShowIEAlert(){
-  if(isIE()){
-     alert("주주 리걸은 인터넷 익스플로러를 지원하지 않아요. 크롬을 이용해주세요.");
+<script>
+  if (
+    window.navigator.userAgent.indexOf("MSIE ") > -1 ||
+    window.navigator.userAgent.indexOf("Trident/") > -1
+  ) {
+    alert(
+      "인터넷 익스플로러는 지원하지 않습니다.\n구글 크롬 브라우저 사용을 권장합니다."
+    );
+    window.open("https://www.google.com/chrome/", "_blank");
+    setTimeout(function () {
+      window.location.href = "https://zuzu.network";
+    }, 10000);
   }
-}
 </script>
 </body>
 </html>
