@@ -5,16 +5,23 @@
 <title>{{ $title }}</title>
 <meta
   name="description"
-  content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}"
+  content={{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}
 />
 {{- hugo.Generator -}}
 <meta http-equiv="content-language" content="ko" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!-- ! Set up open graph -->
-<!-- * Google Verification -->
-{{- if .Site.Params.googleSiteVerify }}
-<meta
-  name="google-site-verification"
-  content="{{ .Site.Params.googleSiteVerify }}"
-/>
-{{- end -}}
+<meta property="og:url" content="https://legal.zuzu.network/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="주주 리걸">
+    <meta property="og:description" content="주주 리걸과 함께라면 셀프 등기와 등기 대행 모두 전보다 훨씬 더 편리하고 투명해질거예요">
+    <meta property="og:image" content={{"/assets/images/opengraph/opengraph.png" | relURL}}>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101144979-15"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-101144979-15');
+    </script>
