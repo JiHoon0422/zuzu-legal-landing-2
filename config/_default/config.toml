@@ -118,13 +118,13 @@ title = "주주 리걸 사용법"
 parent = "resource"
 weight = 1
 
-[[menu.main]]
-identifier = "resource-team"
-name = "주주 팀 소개"
-url = "/resource/team/"
-title = "주주 팀 소개"
-parent = "resource"
-weight = 2
+# [[menu.main]]
+# identifier = "resource-team"
+# name = "주주 팀 소개"
+# url = "/resource/team/"
+# title = "주주 팀 소개"
+# parent = "resource"
+# weight = 2
 
 [[menu.main]]
 identifier = "resource-recruit"
