@@ -21,14 +21,13 @@
                             {{.Title}}
                         </h4>
                         <p class="mb-3 text-wrap" style="font-weight:400;">
-                            <a class="no-decoration" href="{{.Permalink}}">
+                            <a style="font-size:1rem" class="no-decoration" href="{{.Permalink}}">
                                 {{.Params.summary}}
                             </a>
                         </p>
                         <div class="d-flex">
-                            <p style="font-size:0.9rem; font-weight:400;
-                                margin-right:1rem;">{{ .Params.author}}이 알려드려요.</p>
-                            <p style="font-size:0.9rem; font-weight:400;">읽기 시간:
+                            <p style="margin-right:1rem;">{{ .Params.author}}이 알려드려요.</p>
+                            <p>읽기 시간:
                                 약 {{ .Params.readingTime}}분</p>
                         </div>
                     </div>
@@ -36,6 +35,19 @@
             </div>
         </div>
         {{ end }}
+        <div class="row justify-content-center">
+            <div class="col-md-8 p-3" data-aos="fade-up"
+                data-aos-anchor=".guide-list" style="background-color: white;
+                border-radius:0.5rem;">
+                <div class="row align-items-center">
+                    <div class="col-md-12 py-2">
+                        <p class="text-center" style="color:#535353">
+                            다음 포스팅을 준비중이에요...
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

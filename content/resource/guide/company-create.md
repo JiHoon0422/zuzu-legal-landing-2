@@ -7,7 +7,7 @@ summary: '
 실제로 회사 등록을 어떻게 하는지 한번 알아볼까요?
 '
 date: 2021-01-04T21:28:20+09:00
-image : '/assets/images/pack/SprintingDoodle.svg'
+image : '/assets/images/sparkle.gif'
 featureImage: '/assets/images/guide/company-create.webp'
 readingTime: "2"
 author: '소프트웨어 엔지니어 Jin'
