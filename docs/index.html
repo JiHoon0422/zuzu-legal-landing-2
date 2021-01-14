@@ -149,12 +149,12 @@ rel="stylesheet"
                     </h2>
 
                     <div class="row">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <button class="button button-large button-secondary" onclick="window.open('https://legal-app.zuzu.network/login')">
+                    <div class="d-md-flex d-sm-flex-column align-items-center justify-content-center">
+                        <button class="down-sm-width-100 button button-large button-secondary" onclick="window.open('https://legal-app.zuzu.network/login')">
                             <span style="line-height:2.4rem">데모 체험하기</span>
                             <i data-feather="chevron-right" width="18" stroke-width="3"></i>
                         </button>
-                        <button class="button button-large button-primary" onclick="window.open('https://legal-app.zuzu.network/signup')">
+                        <button class="down-sm-width-100 button button-large button-primary" onclick="window.open('https://legal-app.zuzu.network/signup')">
                             <lottie-player src="https://jihoon0422.github.io/zuzu-legal-landing-2/assets/animation/trophy.json" background="transparent" speed="1" loop
                                 autoplay class="lottie-player-24"></lottie-player>
                             <span>무료로 시작하기</span>
@@ -250,15 +250,15 @@ rel="stylesheet"
                 주주가 비대면 바우처 공급 기업으로 선정되었어요 🎉
             </h5>
             <p class="panel-medium-subtitle">
-                비대면 바우처로 10배 이득인 법인 등기 시작해보세요.
+                비대면 바우처로 10배 이득인 법인 등기를 시작해보세요.
             </p>
         </div>
     </div>
     <div class="col-md-2">
-        <button class="button button-primary button-medium" onclick="window.open('voucher/')">
+        <a class="button button-primary button-medium text-white no-underline" href=https://jihoon0422.github.io/zuzu-legal-landing-2/voucher/>
             <span>쿠폰 구매하기</span>
             <i data-feather="chevron-right" width="16"></i>
-        </button>
+        </a>
     </div>
 </div>
 </div>
@@ -442,7 +442,7 @@ rel="stylesheet"
                 data-aos="fade-up" data-aos-anchor=".cta" class="cta-image">
             <h2 class="section-title">
                 <span class="underline-magical">정말로!</span>
-                써보시는 게 제일 빠를거예요!
+                써보시는 게 제일 빠를 거예요!
             </h2>
             <h3 class="section-subtitle">
                 백문이 불여일견! 한번 써보시는 게 10번 설명 듣는 것보다 빨라요!
@@ -628,7 +628,6 @@ rel="stylesheet"
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/reveal.js type="text/javascript"></script>
 
 
-
 <script>
   feather.replace();
   AOS.init({
@@ -639,6 +638,21 @@ rel="stylesheet"
     
     $(".container, .col-md-12, .col-md-10").fitVids();
   });
+
+function isIE() {
+  const ua = window.navigator.userAgent; 
+  const msie = ua.indexOf('MSIE '); 
+  const trident = ua.indexOf('Trident/'); 
+
+  return (msie > 0 || trident > 0);
+}
+
+
+function ShowIEAlert(){
+  if(isIE()){
+     alert("주주 리걸은 인터넷 익스플로러를 지원하지 않아요. 크롬을 이용해주세요.");
+  }
+}
 </script>
 </body>
 </html>

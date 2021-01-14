@@ -8,7 +8,7 @@ supportAgendaItem:  [["임원 선임 (이사, 감사, 대표이사)"],["임원 �
 videoSubtitle: "임원 중임을 주주 리걸에서 어떻게 진행하는지 보여드릴게요"
 videoLink: 'https://player.vimeo.com/video/500027375'
 generatedDocumentSubtitle: '이 문서들을 자동으로 모두 생성하는데 5분도 걸리지 않아요.'
-generatedDocumentItem: [ ["이사회 의사록"], ["주주총회 의사록"], ["각종 승낙서"], ["개인인감신고서"], ["인감계속사용신청서"], ["공증위임장"], ["대표이사 확인서"]]
+generatedDocumentItem: [ ["이사회 의사록"], ["주주총회 의사록"], ["각종 승낙서"], ["개인인감신고서"], ["인감카드 계속사용신청서"], ["공증위임장"], ["대표이사 확인서"]]
 date: 2021-01-04T21:28:20+09:00
 draft: false
 ---

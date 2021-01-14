@@ -28,8 +28,11 @@
         }
     }
 
-    .active {
+    .active.active {
         background-color: transparent;
         @include body-text(1, $medium);
+        @include media-break-point-down {
+            @include heading4(2, $medium);
+        }
     }
 }

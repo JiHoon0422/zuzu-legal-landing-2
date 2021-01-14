@@ -139,7 +139,7 @@ rel="stylesheet"
                 <div class="main">
                     <img src=https://jihoon0422.github.io/zuzu-legal-landing-2/assets/images/sparkle.gif class="custom-icon-48" alt="sparkle"  style="mix-blend-mode: multiply;"/>
                     <h1 class="main-title" class="text-left">정관 변경</h1>
-                    <h2 class="main-subtitle w-75 word-wrap">주식회사의 헌법인 정관! 대충 등기할 수 없겠죠? 정확하기다고 소문난 주주 리걸에서 어떤 안건을 지원하는지 스크롤을 내려 확인해보세요.</h2>
+                    <h2 class="main-subtitle w-75 word-wrap">주식회사의 헌법인 정관! 대충 변경할 순 없겠죠? 정확하다고 소문난 주주 리걸에서 어떤 안건을 지원하는지 스크롤을 내려 확인해보세요.</h2>
                 </div>
             </div>
             <div class="col-md-6">
@@ -222,7 +222,7 @@ rel="stylesheet"
                                 class="custom-icon-24" style="mix-blend-mode: screen;">
                         </div>
                         <h5 class="py-2 text-white">
-                            <span>관내 본점 이전</span>
+                            <span>주식양도제한</span>
                         </h5>
                     </div>
                 </div>
@@ -323,7 +323,7 @@ rel="stylesheet"
                         <span class="reveal-paper-item-title">
                             <img src="https://jihoon0422.github.io/zuzu-legal-landing-2/assets/images/pdf-icon.png" alt="pdf아이콘"
                             class="custom-icon-16" style="height:auto; margin-right:1rem">
-                            인감계속사용신청서
+                            인감카드 계속사용신청서
                         </span>
                     </div>
                 </div>
@@ -353,7 +353,7 @@ rel="stylesheet"
                         <span class="reveal-paper-item-title">
                             <img src="https://jihoon0422.github.io/zuzu-legal-landing-2/assets/images/pdf-icon.png" alt="pdf아이콘"
                             class="custom-icon-16" style="height:auto; margin-right:1rem">
-                            외 기타 필요 문서
+                            기타 필요 문서
                         </span>
                     </div>
                 </div>
@@ -361,7 +361,7 @@ rel="stylesheet"
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center" data-aos="fade-up">
-                        <span class="align-middle">*</span> 생성 문서는 회사의 정관, 선택 안건, 현재 회사 상태에 따라 자동으로 달라집니다.
+                        <span class="align-middle">*</span> 생성 문서는 회사의 정관, 현재 회사 상태, 선택 안건에 따라 자동으로 달라집니다.
                     </p>
                 </div>
             </div>
@@ -378,15 +378,15 @@ rel="stylesheet"
                 주주가 비대면 바우처 공급 기업으로 선정되었어요 🎉
             </h5>
             <p class="panel-medium-subtitle">
-                비대면 바우처로 10배 이득인 법인 등기 시작해보세요.
+                비대면 바우처로 10배 이득인 법인 등기를 시작해보세요.
             </p>
         </div>
     </div>
     <div class="col-md-2">
-        <button class="button button-primary button-medium" onclick="window.open('voucher/')">
+        <a class="button button-primary button-medium text-white no-underline" href=https://jihoon0422.github.io/zuzu-legal-landing-2/voucher/>
             <span>쿠폰 구매하기</span>
             <i data-feather="chevron-right" width="16"></i>
-        </button>
+        </a>
     </div>
 </div>
 </section><section id="customer" class="customer section background-light">
@@ -501,7 +501,7 @@ rel="stylesheet"
                 data-aos="fade-up" data-aos-anchor=".cta" class="cta-image">
             <h2 class="section-title">
                 <span class="underline-magical">정말로!</span>
-                써보시는 게 제일 빠를거예요!
+                써보시는 게 제일 빠를 거예요!
             </h2>
             <h3 class="section-subtitle">
                 백문이 불여일견! 한번 써보시는 게 10번 설명 듣는 것보다 빨라요!
@@ -685,7 +685,6 @@ rel="stylesheet"
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/reveal.js type="text/javascript"></script>
 
 
-
 <script>
   feather.replace();
   AOS.init({
@@ -696,6 +695,21 @@ rel="stylesheet"
     
     $(".container, .col-md-12, .col-md-10").fitVids();
   });
+
+function isIE() {
+  const ua = window.navigator.userAgent; 
+  const msie = ua.indexOf('MSIE '); 
+  const trident = ua.indexOf('Trident/'); 
+
+  return (msie > 0 || trident > 0);
+}
+
+
+function ShowIEAlert(){
+  if(isIE()){
+     alert("주주 리걸은 인터넷 익스플로러를 지원하지 않아요. 크롬을 이용해주세요.");
+  }
+}
 </script>
 </body>
 </html>

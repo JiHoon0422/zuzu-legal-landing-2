@@ -46,6 +46,12 @@
       border-radius: 100%;
       @include caption(1, $bold);
     }
+    &.down-sm-width-100 {
+      @include media-break-point-down {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
   &-medium {
     padding: $baseUnit * 1 $baseUnit * 1.5;
@@ -53,6 +59,8 @@
     &.down-sm-width-100 {
       @include media-break-point-down {
         padding: $baseUnit * 1.5 $baseUnit * 1.5 * 1.5;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

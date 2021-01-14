@@ -1,21 +1,21 @@
 [coupon]
 
 [[voucher]]
-value = "250,000"
+value = "25"
 link = "https://www.k-voucher.kr/detail.html?no=3381"
 image="/assets/images/voucher/coupon-image-down-50.svg"
 
 [[voucher]]
-value = "500,000"
+value = "50"
 link = "https://www.k-voucher.kr/detail.html?no=3380"
 image="/assets/images/voucher/coupon-image-down-50.svg"
 
 [[voucher]]
-value = "750,000"
+value = "75"
 link = "https://www.k-voucher.kr/detail.html?no=3379"
 image="/assets/images/voucher/coupon-image-up-50.svg"
 
 [[voucher]]
-value = "1,000,000"
+value = "100"
 link = "https://www.k-voucher.kr/detail.html?no=3378"
 image="/assets/images/voucher/coupon-image-up-50.svg"

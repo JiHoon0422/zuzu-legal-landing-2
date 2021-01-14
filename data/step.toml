@@ -7,7 +7,7 @@ image = "/assets/images/voucher/voucher-step-1.webp"
 link = "https://www.k-voucher.kr/detail.html?no=3378"
 
 [[voucher]]
-title = "2. 주주 리걸 스태프 거래수락"
+title = "2. 주주 리걸 스태프가 거래수락"
 content = "스태프가 거래상담 요청을 확인하고 거래를 수락해드려요."
 
 [[voucher]]
