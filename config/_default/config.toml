@@ -136,9 +136,9 @@ weight = 3
 
 [[menu.main]]
 identifier = "resource-update"
-name = "업데이트 소식"
-url = "/resource/update/"
-title = "업데이트 소식"
+name = "주주 블로그"
+url = "https://blog.zuzu.network"
+title = "주주 블로그"
 parent = "resource"
 weight = 4
 
