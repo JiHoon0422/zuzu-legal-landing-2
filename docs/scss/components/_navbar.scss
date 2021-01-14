@@ -6,7 +6,7 @@ nav {
     .navbar-inner {
       display: flex;
       align-items: center;
-      padding: $baseUnit 0;
+      padding: $baseUnit * 2 0;
       @include media-break-point-down {
         padding: $baseUnit $baseUnit * 2;
       }
@@ -31,7 +31,7 @@ nav {
 
     .nav-item {
       .nav-link {
-        @include caption(1, $regular);
+        @include body-text(1, $regular);
         color: $bodyText;
         padding: $baseUnit * 0.5 $baseUnit;
         @include media-break-point-down {
@@ -40,7 +40,7 @@ nav {
       }
     }
     .active {
-      @include caption(1, $bold);
+      @include body-text(1, $bold);
       color: $primaryLight;
       .nav-link {
         color: inherit;

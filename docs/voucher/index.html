@@ -116,9 +116,9 @@ rel="stylesheet"
       </ul>
       <form class="form-inline">
         <button type="button" onclick="location.href=&#34;https://legal-app.zuzu.network/login&#34;"
-          class="button button-small button-tertiary">로그인</button>
+          class="button button-medium button-secondary">로그인</button>
       <button type="button" onclick="location.href=&#34;https://legal-app.zuzu.network/signup&#34;"
-          class="button button-small button-tertiary">시작하기</button>
+          class="button button-medium button-primary">시작하기</button>
       </form>
     </div>
   </div>
@@ -126,7 +126,7 @@ rel="stylesheet"
 <div class="banner" role="banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 py-1">
+            <div class="col-md-12">
                 <span class="badge badge-primary">Update</span>
                 <span class=banner-summary>유상증자 셀프 등기, 등기 대행이 가능해졌어요!</span>
             </div>
@@ -368,16 +368,26 @@ rel="stylesheet"
                                 class="custom-icon-80 panel-medium-image">
                             <div class="panel-medium-text-wrapper">
                                 <h5 class="panel-medium-title">
+                                    <span class="underline-magical">
                                     조금 더 자세히 알고 싶으세요?
+                                </span>
                                 </h5>
-                                <p class="panel-medium-subtitle">
+                                <p class="panel-medium-subtitle mt-3">
                                     조미선 Customer Service & Operation Lead와
                                     상담해보세요.
                                 </p>
                                 <div class="mt-3">
-                                    <a href="tel:010-5950-3944"
-                                        style="margin-right:0.5rem;">010-5950-3944</a>
-                                    <a href="tel:010-3931-6788">010-3931-6788</a>
+                                    <a href="tel:010-5950-3944" class="no-decoration no-underline">
+                                    <span class="button button-medium button-secondary">
+                                        연락하기1
+                                    <i data-feather="phone" width="16"></i>
+                                </span>
+                                    </a>
+                                    <a href="tel:010-3931-6788" style="font-weight: 500;" class="no-decoration no-underline">
+                                        <span class="button button-medium button-secondary">연락하기2
+                                            <i data-feather="phone" width="16"></i>
+                                        </span></a>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +405,7 @@ rel="stylesheet"
             <img src="https://jihoon0422.github.io/zuzu-legal-landing-2/assets/images/pack/UnboxingDoodle.svg" alt="콜투액션이미지"
                 data-aos="fade-up" data-aos-anchor=".cta" class="cta-image">
             <h2 class="section-title">
-                <span class="highlight">정말로!</span>
+                <span class="underline-magical">정말로!</span>
                 써보시는게 제일 빠를거예요!
             </h2>
             <h3 class="section-subtitle">
@@ -418,7 +428,7 @@ rel="stylesheet"
 </div>
 
 
-<footer>
+<footer class="bg-light">
   <div class="container">
     <div class="footer-inner">
       <div class="row">
@@ -567,6 +577,7 @@ rel="stylesheet"
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/vendor/progress-image.js type="text/javascript"></script>
 
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/vendor/anime.min.js type="text/javascript"></script>
+<script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/vendor/fitVids.js type="text/javascript"></script>
 
 
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/spinner.js type="text/javascript"></script>
@@ -578,11 +589,16 @@ rel="stylesheet"
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/reveal.js type="text/javascript"></script>
 
 
+
 <script>
   feather.replace();
   AOS.init({
     duration: 1200,
     offset: 20,
+  });
+  $(document).ready(function(){
+    
+    $(".container, .col-md-12, .col-md-10").fitVids();
   });
 </script>
 </body>

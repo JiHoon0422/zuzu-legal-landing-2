@@ -1,17 +1,24 @@
 section {
     position: relative;
     z-index: 1;
-    padding: $baseUnit * 10 $baseUnit * 4;
+    padding: $baseUnit * 14 $baseUnit * 4;
     @include media-break-point-down {
         padding: $baseUnit * 6 $baseUnit * 3;
+    }
+    &.narrow {
+        padding: $baseUnit * 8 $baseUnit * 4;
     }
     .main {
         &-title {
             margin-bottom: $baseUnit;
-            @include heading1(1.4, $black);
+            @include heading1(1.5, $black);
             color: $subtitleText;
             word-wrap: break-word;
-            word-break: break-all;
+            @include media-break-point-down {
+                br {
+                    display: none;
+                }
+            }
             &-wrapper {
                 @include down-sm-flex-col;
             }

@@ -1,0 +1,76 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title">
+                <span class="underline-magical">
+                    지원하는 {{ .Title}}
+                </span>
+            </h2>
+            <h3 class="section-subtitle">{{.Params.supportAgendaSubtitle}}</h3>
+        </div>
+        <div class="row">
+            <div class="row reveal-row-wrapper">
+                {{ range .Params.supportAgendaItem }}
+                <div class="col-md-6">
+                    <div class="reveal-item align-items-center flex-gap-8
+                        bg-light" data-aos="fade-out">
+                        <div>
+                            <img src="/assets/images/sparkle.gif" alt="spakrle"
+                                class="custom-icon-24">
+                        </div>
+                        <h5>
+                            <span>{{ index . 0}}</span>
+                        </h5>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">{{.Title}}을 <span
+                        class="underline-magical">
+                        영상으로 먼저 만나보세요.
+                    </span></h2>
+                <h3 class="section-subtitle">{{.Params.videoSubtitle}}
+                </h3>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="video-container" data-aos="fade-up">
+                        <iframe class="video-responsive"
+                            src={{.Params.videoLink}}
+                            frameborder="0" allow="autoplay; fullscreen;
+                            picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="option-grant-document">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">아래 문서가 <span
+                        class="underline-magical">상법과 정관에 따라 자동</span>으로 생성되어요</h2>
+                <h3 class="section-subtitle">{{.Params.generatedDocumentSubtitle}}</h3>
+            </div>
+            <div class="row">
+                {{ range .Params.generatedDocumentItem }}
+                <div class="col-md-3 p-3">
+                    <div class="reveal-paper-item bg-light" data-aos="fade-up">
+                        <span class="reveal-paper-item-title">
+                            <img src="/assets/images/pdf-icon.png" alt="pdf아이콘"
+                            class="custom-icon-16" style="height:auto; margin-right:1rem">
+                            {{index . 0}}
+                        </span>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>

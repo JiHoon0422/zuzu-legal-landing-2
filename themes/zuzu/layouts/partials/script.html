@@ -12,6 +12,7 @@
 <script src={{"/js/vendor/progress-image.js" | relURL }} type="text/javascript"></script>
 <!-- <script src={{"/js/vendor/anime.min.js" | absURL }} type="text/javascript"></script> -->
 <script src={{"/js/vendor/anime.min.js" | relURL }} type="text/javascript"></script>
+<script src={{"/js/vendor/fitVids.js" | relURL }} type="text/javascript"></script>
 
 <!-- <script src={{"/js/spinner.js" | absURL }} type="text/javascript"></script> -->
 <script src={{"/js/spinner.js" | relURL }} type="text/javascript"></script>
@@ -23,10 +24,15 @@
 <script src={{"/js/reveal.js" | relURL }} type="text/javascript"></script>
 
 
+
 <script>
   feather.replace();
   AOS.init({
     duration: 1200,
     offset: 20,
+  });
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".container, .col-md-12, .col-md-10").fitVids();
   });
 </script>

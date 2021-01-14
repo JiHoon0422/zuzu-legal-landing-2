@@ -73,9 +73,19 @@
   &-primary {
     color: $white;
     background: $primaryGradient;
-    // &:hover {
-    //   background: $primaryHover;
-    // }
+    background-size: 400% 400%;
+    animation: GradientAnimation 6s ease-out infinite alternate;
+    @keyframes GradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   }
   &-secondary {
     color: $bodyText;

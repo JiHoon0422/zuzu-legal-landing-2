@@ -1,5 +1,5 @@
 .banner {
-    padding: $baseUnit $baseUnit * 3;
+    padding: $baseUnit $baseUnit;
     &-summary {
         margin-left: $baseUnit * 0.5;
         @include caption(1.75, $medium);

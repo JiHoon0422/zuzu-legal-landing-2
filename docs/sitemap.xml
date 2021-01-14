@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/</loc>
+    <lastmod>2021-01-04T21:28:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/agendas/</loc>
     <lastmod>2021-01-04T21:28:20+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -46,13 +53,6 @@
   
   <url>
     <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/voucher/</loc>
-    <lastmod>2021-01-04T21:28:20+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jihoon0422.github.io/zuzu-legal-landing-2/</loc>
     <lastmod>2021-01-04T21:28:20+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

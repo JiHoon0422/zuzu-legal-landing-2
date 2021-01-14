@@ -15,11 +15,11 @@
     }
 
     .custom-dropdown-item {
-        @include caption(1, $regular);
+        @include body-text(1, $regular);
         @include media-break-point-down {
             @include heading4(2, $medium);
         }
-        padding: $baseUnit $baseUnit * 3;
+        padding: $baseUnit * 1.5 $baseUnit * 3;
         color: $bodyText;
         &:active {
             background-color: transparent;

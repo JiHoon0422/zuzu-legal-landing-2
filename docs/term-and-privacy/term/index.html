@@ -116,9 +116,9 @@ rel="stylesheet"
       </ul>
       <form class="form-inline">
         <button type="button" onclick="location.href=&#34;https://legal-app.zuzu.network/login&#34;"
-          class="button button-small button-tertiary">로그인</button>
+          class="button button-medium button-secondary">로그인</button>
       <button type="button" onclick="location.href=&#34;https://legal-app.zuzu.network/signup&#34;"
-          class="button button-small button-tertiary">시작하기</button>
+          class="button button-medium button-primary">시작하기</button>
       </form>
     </div>
   </div>
@@ -126,7 +126,7 @@ rel="stylesheet"
 <div class="banner" role="banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 py-1">
+            <div class="col-md-12">
                 <span class="badge badge-primary">Update</span>
                 <span class=banner-summary>유상증자 셀프 등기, 등기 대행이 가능해졌어요!</span>
             </div>
@@ -285,7 +285,7 @@ rel="stylesheet"
 
 
 
-<footer>
+<footer class="bg-light">
   <div class="container">
     <div class="footer-inner">
       <div class="row">
@@ -424,7 +424,7 @@ rel="stylesheet"
 </div>
 
 
-<footer>
+<footer class="bg-light">
   <div class="container">
     <div class="footer-inner">
       <div class="row">
@@ -573,6 +573,7 @@ rel="stylesheet"
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/vendor/progress-image.js type="text/javascript"></script>
 
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/vendor/anime.min.js type="text/javascript"></script>
+<script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/vendor/fitVids.js type="text/javascript"></script>
 
 
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/spinner.js type="text/javascript"></script>
@@ -584,11 +585,16 @@ rel="stylesheet"
 <script src=https://jihoon0422.github.io/zuzu-legal-landing-2/js/reveal.js type="text/javascript"></script>
 
 
+
 <script>
   feather.replace();
   AOS.init({
     duration: 1200,
     offset: 20,
+  });
+  $(document).ready(function(){
+    
+    $(".container, .col-md-12, .col-md-10").fitVids();
   });
 </script>
 </body>
