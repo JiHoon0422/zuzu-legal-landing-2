@@ -13,7 +13,7 @@
             border-right: 1px solid $hr;
         }
         &-title {
-            @include body-text(1.5, $medium);
+            @include heading5(1.5, $medium);
             color: $bodyText;
             margin-bottom: $baseUnit * 0.5;
         }

@@ -51,7 +51,7 @@ weight = 1
 
 [[menu.main]]
 identifier = "captial-change"
-name = "자본금 변경 관련"
+name = "자본금 변경"
 url = "/agendas/capital-change/"
 parent = "agendas"
 title = "자본금 변경"
@@ -59,7 +59,7 @@ weight = 1
 
 [[menu.main]]
 identifier = "director-change"
-name = "임원 변경 관련"
+name = "임원 변경"
 url = "/agendas/director-change/"
 parent = "agendas"
 title = "임원 변경"
@@ -67,7 +67,7 @@ weight = 2
 
 [[menu.main]]
 identifier = "aoi-change"
-name = "정관 변경 관련"
+name = "정관 변경"
 url = "/agendas/aoi-change/"
 parent = "agendas"
 title = "정관 변경"
@@ -75,7 +75,7 @@ weight = 3
 
 [[menu.main]]
 identifier = "option"
-name = "스톡옵션 관련"
+name = "스톡옵션"
 url = "/agendas/option/"
 parent = "agendas"
 title = "스톡옵션"

@@ -2,14 +2,14 @@
 <div class="container">
     <div class="row">
         <h2 class="section-title text-center text-white">데이터로 보는 주주 리걸</h4>
-        <h4 class="section-subtitle text-center text-white">{{ now.Format "2006" }} 1월 첫 째주까지 기준 주주 리걸에서 생성된 문서와 등기 횟수를 확인해보세요</h4>
+        <h4 class="section-subtitle text-center text-white">{{ now.Format "2006" }}년 1월 첫 째주까지 기준 주주 리걸에서 생성된 문서와 등기 횟수를 확인해보세요</h4>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-12 panel-large statistics" data-aos="fade-up"
             data-aos-duration="732" data-aos-offset="20">
             <div class="row reveal-row-wrapper">
                 {{ range $.Site.Data.section.statistics}}
-                <div class="col-md-3 reveal p-3">
+                <div class="col-md-4 reveal">
                     <div class="reveal-item align-items-center flex-gap-8">
                         <div>
                             <img src="/assets/images/sparkle.gif" alt="spakrle" class="custom-icon-24">

@@ -1,7 +1,7 @@
 ---
 layout: 'agenda'
 title: '임원 변경'
-subtitle: '봄날의 인간의 어디 아름답고 끝까지 심장의 것이다.보라, 위하여서. 같이, 있으며, 기관과 것이다. 광야에서 새가 봄날의 있으며, 할지니, 천하를 우리의 황금시대다.'
+subtitle: '꼭 해야하는데늘 헷갈리고 미뤄지는 임원 변경 등기, 이제 주주 리걸로 편리하게 하세요'
 image: '/assets/images/pack/StrollingDoodle.svg'
 date: 2021-01-04T21:28:20+09:00
 draft: false
