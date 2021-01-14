@@ -1,10 +1,10 @@
 [statistics1]
 name = "주주총회 의사록 생성"
-count = "1102"
+count = "492"
 
 [statistics2]
 name = "이사회 의사록 생성"
-count = "1243"
+count = "477"
 
 # [statistics3]
 # name = "주식청약서 생성"
@@ -16,7 +16,7 @@ count = "1243"
 
 [statistics5]
 name = "스톡옵션 계약서 생성"
-count = "138"
+count = "227"
 
 # [statistics6]
 # name = "임원 변경 승낙서 생성"
